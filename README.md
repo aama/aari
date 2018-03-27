@@ -1,2 +1,2 @@
 # aari
-A South motic language, described by Mous
+A South Omotic language, described by Hayward
