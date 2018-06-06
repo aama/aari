@@ -20,11 +20,10 @@
             :polarity [:Affirmative :Negative],
             :pos [:Noun :Pronoun :Verb],
             :postpositionClass [],
-            :proClass [:DefMarker :Demonstrative :Independent :PossObj :ProComp],
+             :pmorphClass [:ProMorph], :proClass [ :DefMarker :Demonstrative :Independent :PossObj :ProComp],
             :rootClass [:CCC :CCY :CVC :Invar],
             :tam [:Aorist :Future :Imperative :Jussive :NA :Optative :Past :Permissive :Present],
-            :vmorphClass [:FiniteToBeAdded :Affix_SubjMark  :NonFin_Participles :Stem_DervSem :Stem_DervTense :Stem_Tam]
-            :pdgmType [:Finite :FinitePartial :PRO :NOM :VOther]}
+            :vmorphClass [:FiniteToBeAdded :Affix_SubjMark  :NonFin_Participles :Stem_DervSem :Stem_DervTense :Stem_Tam]}
  :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :defClass :deixis :derivedStem :derivedStemAug :participle :polarity :pos :proClass :tam],
           :inflClass [:conjClass :pluralClass :postpositionClass :rootClass],
@@ -34,7 +33,7 @@
  :termclusters [
 
            {:label "Finite_Verb_Paradigms_to_be_added"
-            :common {:vmorpheme :FiniteToBeAdded
+            :common {:vmorphClass :FiniteToBeAdded
                      :pos :Verb,
                      ;; needs :person and one other prop to pass muster
                      :person :To_be_added
@@ -43,7 +42,7 @@
                     [  "not attested"]]
             }
            {:label "Pronominal_Paradigms_to_be_added"
-            :common {:pos :Pronoun,
+            :common {:pos :Pronoun, :pmorphClass :ProMorph,
                      :proClass :To_be_added}
             :terms [[:token],
                     ["not attested"]]
