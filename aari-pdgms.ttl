@@ -1,0 +1,496 @@
+#TTL FROM INPUT FILE:
+#../aama-data/data//aari/aari-pdgms.edn
+
+@prefix rdf:	 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/elements>.
+@prefix dcterms:    <http://purl.org/dc/terms>.
+@prefix aama:	 <http://id.oi.uchicago.edu/aama/2013/> .
+@prefix aamas:	 <http://id.oi.uchicago.edu/aama/2013/schema/> .
+@prefix aar:   <http://id.oi.uchicago.edu/aama/2013/aari/> .
+
+#LANG INFO:
+
+aama:Aari a aamas:Language .
+aama:Aari rdfs:label "Aari" .
+aama:Aari aamas:subfamily "SouthOmotic" .
+aama:Aari aamas:lpref "aar" .
+aama:Aari aamas:dataSource "Hayward1990c" .
+aama:Aari aamas:dataSourceNotes "" .
+aama:Aari aamas:geodemoURL "http://www.ethnologue.com/language/aiw" .
+aama:Aari aamas:geodemoTXT "Speakers: 298%%300%% all users. L1 users: 285%%000 (2010 UNSD). L2 users: 13%%300. 129%%000 monolinguals. Location: SW Ethiopia%% Southern Nations%% Nationalities%% and Peoples’ region: central north Omo zone%% south tip of Ethiopia plateau." .
+
+
+#SCHEMATA: participle
+aar:participle aamas:lang aama:Aari .
+aar:Participle aamas:lang aama:Aari .
+aar:participle rdfs:domain aamas:Term .
+aar:Participle rdfs:label "participle exponents" .
+aar:participle rdfs:label "participle" .
+aar:participle rdfs:range aar:Participle .
+aar:Participle rdfs:subClassOf aar:MuExponent .
+aar:participle rdfs:subPropertyOf aar:muProperty .
+
+#SCHEMATA: person
+aar:person aamas:lang aama:Aari .
+aar:Person aamas:lang aama:Aari .
+aar:person rdfs:domain aamas:Term .
+aar:Person rdfs:label "person exponents" .
+aar:person rdfs:label "person" .
+aar:person rdfs:range aar:Person .
+aar:Person rdfs:subClassOf aar:MuExponent .
+aar:person rdfs:subPropertyOf aar:muProperty .
+aar:Person1 aamas:lang aama:Aari .
+aar:Person1 rdf:type aar:Person .
+aar:Person1 rdfs:label "Person1" .
+aar:Person2 aamas:lang aama:Aari .
+aar:Person2 rdf:type aar:Person .
+aar:Person2 rdfs:label "Person2" .
+aar:Person3 aamas:lang aama:Aari .
+aar:Person3 rdf:type aar:Person .
+aar:Person3 rdfs:label "Person3" .
+
+#SCHEMATA: derivedStem
+aar:derivedStem aamas:lang aama:Aari .
+aar:Derivedstem aamas:lang aama:Aari .
+aar:derivedStem rdfs:domain aamas:Term .
+aar:Derivedstem rdfs:label "derivedStem exponents" .
+aar:derivedStem rdfs:label "derivedStem" .
+aar:derivedStem rdfs:range aar:Derivedstem .
+aar:Derivedstem rdfs:subClassOf aar:MuExponent .
+aar:derivedStem rdfs:subPropertyOf aar:muProperty .
+aar:B aamas:lang aama:Aari .
+aar:B rdf:type aar:Derivedstem .
+aar:B rdfs:label "B" .
+aar:BIntensive aamas:lang aama:Aari .
+aar:BIntensive rdf:type aar:Derivedstem .
+aar:BIntensive rdfs:label "BIntensive" .
+aar:M aamas:lang aama:Aari .
+aar:M rdf:type aar:Derivedstem .
+aar:M rdfs:label "M" .
+aar:MIntensive aamas:lang aama:Aari .
+aar:MIntensive rdf:type aar:Derivedstem .
+aar:MIntensive rdfs:label "MIntensive" .
+aar:R aamas:lang aama:Aari .
+aar:R rdf:type aar:Derivedstem .
+aar:R rdfs:label "R" .
+aar:S aamas:lang aama:Aari .
+aar:S rdf:type aar:Derivedstem .
+aar:S rdfs:label "S" .
+aar:SIntensive aamas:lang aama:Aari .
+aar:SIntensive rdf:type aar:Derivedstem .
+aar:SIntensive rdfs:label "SIntensive" .
+aar:SMIntensive aamas:lang aama:Aari .
+aar:SMIntensive rdf:type aar:Derivedstem .
+aar:SMIntensive rdfs:label "SMIntensive" .
+aar:SS aamas:lang aama:Aari .
+aar:SS rdf:type aar:Derivedstem .
+aar:SS rdfs:label "SS" .
+aar:T aamas:lang aama:Aari .
+aar:T rdf:type aar:Derivedstem .
+aar:T rdfs:label "T" .
+aar:TIntensive aamas:lang aama:Aari .
+aar:TIntensive rdf:type aar:Derivedstem .
+aar:TIntensive rdfs:label "TIntensive" .
+
+#SCHEMATA: number
+aar:number aamas:lang aama:Aari .
+aar:Number aamas:lang aama:Aari .
+aar:number rdfs:domain aamas:Term .
+aar:Number rdfs:label "number exponents" .
+aar:number rdfs:label "number" .
+aar:number rdfs:range aar:Number .
+aar:Number rdfs:subClassOf aar:MuExponent .
+aar:number rdfs:subPropertyOf aar:muProperty .
+aar:Plural aamas:lang aama:Aari .
+aar:Plural rdf:type aar:Number .
+aar:Plural rdfs:label "Plural" .
+aar:Singular aamas:lang aama:Aari .
+aar:Singular rdf:type aar:Number .
+aar:Singular rdfs:label "Singular" .
+aar:_NA aamas:lang aama:Aari .
+aar:_NA rdf:type aar:Number .
+aar:_NA rdfs:label "_NA" .
+
+#SCHEMATA: vmorphClass
+aar:vmorphClass aamas:lang aama:Aari .
+aar:Vmorphclass aamas:lang aama:Aari .
+aar:vmorphClass rdfs:domain aamas:Term .
+aar:Vmorphclass rdfs:label "vmorphClass exponents" .
+aar:vmorphClass rdfs:label "vmorphClass" .
+aar:vmorphClass rdfs:range aar:Vmorphclass .
+aar:Vmorphclass rdfs:subClassOf aar:MuExponent .
+aar:vmorphClass rdfs:subPropertyOf aar:muProperty .
+aar:FiniteToBeAdded aamas:lang aama:Aari .
+aar:FiniteToBeAdded rdf:type aar:Vmorphclass .
+aar:FiniteToBeAdded rdfs:label "FiniteToBeAdded" .
+aar:Affix_SubjMark aamas:lang aama:Aari .
+aar:Affix_SubjMark rdf:type aar:Vmorphclass .
+aar:Affix_SubjMark rdfs:label "Affix_SubjMark" .
+aar:NonFin_Participles aamas:lang aama:Aari .
+aar:NonFin_Participles rdf:type aar:Vmorphclass .
+aar:NonFin_Participles rdfs:label "NonFin_Participles" .
+aar:Stem_DervSem aamas:lang aama:Aari .
+aar:Stem_DervSem rdf:type aar:Vmorphclass .
+aar:Stem_DervSem rdfs:label "Stem_DervSem" .
+aar:Stem_DervTense aamas:lang aama:Aari .
+aar:Stem_DervTense rdf:type aar:Vmorphclass .
+aar:Stem_DervTense rdfs:label "Stem_DervTense" .
+aar:Stem_Tam aamas:lang aama:Aari .
+aar:Stem_Tam rdf:type aar:Vmorphclass .
+aar:Stem_Tam rdfs:label "Stem_Tam" .
+
+#SCHEMATA: pos
+aar:pos aamas:lang aama:Aari .
+aar:Pos aamas:lang aama:Aari .
+aar:pos rdfs:domain aamas:Term .
+aar:Pos rdfs:label "pos exponents" .
+aar:pos rdfs:label "pos" .
+aar:pos rdfs:range aar:Pos .
+aar:Pos rdfs:subClassOf aar:MuExponent .
+aar:pos rdfs:subPropertyOf aar:muProperty .
+aar:Noun aamas:lang aama:Aari .
+aar:Noun rdf:type aar:Pos .
+aar:Noun rdfs:label "Noun" .
+aar:Pronoun aamas:lang aama:Aari .
+aar:Pronoun rdf:type aar:Pos .
+aar:Pronoun rdfs:label "Pronoun" .
+aar:Verb aamas:lang aama:Aari .
+aar:Verb rdf:type aar:Pos .
+aar:Verb rdfs:label "Verb" .
+
+#SCHEMATA: proClass
+aar:proClass aamas:lang aama:Aari .
+aar:Proclass aamas:lang aama:Aari .
+aar:proClass rdfs:domain aamas:Term .
+aar:Proclass rdfs:label "proClass exponents" .
+aar:proClass rdfs:label "proClass" .
+aar:proClass rdfs:range aar:Proclass .
+aar:Proclass rdfs:subClassOf aar:MuExponent .
+aar:proClass rdfs:subPropertyOf aar:muProperty .
+aar:DefMarker aamas:lang aama:Aari .
+aar:DefMarker rdf:type aar:Proclass .
+aar:DefMarker rdfs:label "DefMarker" .
+aar:Demonstrative aamas:lang aama:Aari .
+aar:Demonstrative rdf:type aar:Proclass .
+aar:Demonstrative rdfs:label "Demonstrative" .
+aar:Independent aamas:lang aama:Aari .
+aar:Independent rdf:type aar:Proclass .
+aar:Independent rdfs:label "Independent" .
+aar:PossObj aamas:lang aama:Aari .
+aar:PossObj rdf:type aar:Proclass .
+aar:PossObj rdfs:label "PossObj" .
+aar:ProComp aamas:lang aama:Aari .
+aar:ProComp rdf:type aar:Proclass .
+aar:ProComp rdfs:label "ProComp" .
+
+#SCHEMATA: conjClass
+aar:conjClass aamas:lang aama:Aari .
+aar:Conjclass aamas:lang aama:Aari .
+aar:conjClass rdfs:domain aamas:Term .
+aar:Conjclass rdfs:label "conjClass exponents" .
+aar:conjClass rdfs:label "conjClass" .
+aar:conjClass rdfs:range aar:Conjclass .
+aar:Conjclass rdfs:subClassOf aar:MuExponent .
+aar:conjClass rdfs:subPropertyOf aar:muProperty .
+aar:Enclitic aamas:lang aama:Aari .
+aar:Enclitic rdf:type aar:Conjclass .
+aar:Enclitic rdfs:label "Enclitic" .
+aar:Prefix aamas:lang aama:Aari .
+aar:Prefix rdf:type aar:Conjclass .
+aar:Prefix rdfs:label "Prefix" .
+aar:Suffix aamas:lang aama:Aari .
+aar:Suffix rdf:type aar:Conjclass .
+aar:Suffix rdfs:label "Suffix" .
+
+#SCHEMATA: pmorphClass
+aar:pmorphClass aamas:lang aama:Aari .
+aar:Pmorphclass aamas:lang aama:Aari .
+aar:pmorphClass rdfs:domain aamas:Term .
+aar:Pmorphclass rdfs:label "pmorphClass exponents" .
+aar:pmorphClass rdfs:label "pmorphClass" .
+aar:pmorphClass rdfs:range aar:Pmorphclass .
+aar:Pmorphclass rdfs:subClassOf aar:MuExponent .
+aar:pmorphClass rdfs:subPropertyOf aar:muProperty .
+aar:ProMorph aamas:lang aama:Aari .
+aar:ProMorph rdf:type aar:Pmorphclass .
+aar:ProMorph rdfs:label "ProMorph" .
+
+#SCHEMATA: case
+aar:case aamas:lang aama:Aari .
+aar:Case aamas:lang aama:Aari .
+aar:case rdfs:domain aamas:Term .
+aar:Case rdfs:label "case exponents" .
+aar:case rdfs:label "case" .
+aar:case rdfs:range aar:Case .
+aar:Case rdfs:subClassOf aar:MuExponent .
+aar:case rdfs:subPropertyOf aar:muProperty .
+aar:Ablative aamas:lang aama:Aari .
+aar:Ablative rdf:type aar:Case .
+aar:Ablative rdfs:label "Ablative" .
+aar:Equative aamas:lang aama:Aari .
+aar:Equative rdf:type aar:Case .
+aar:Equative rdfs:label "Equative" .
+aar:Locative aamas:lang aama:Aari .
+aar:Locative rdf:type aar:Case .
+aar:Locative rdfs:label "Locative" .
+aar:Nom_obj aamas:lang aama:Aari .
+aar:Nom_obj rdf:type aar:Case .
+aar:Nom_obj rdfs:label "Nom_obj" .
+aar:Object aamas:lang aama:Aari .
+aar:Object rdf:type aar:Case .
+aar:Object rdfs:label "Object" .
+aar:Possessive aamas:lang aama:Aari .
+aar:Possessive rdf:type aar:Case .
+aar:Possessive rdfs:label "Possessive" .
+aar:Subject aamas:lang aama:Aari .
+aar:Subject rdf:type aar:Case .
+aar:Subject rdfs:label "Subject" .
+
+#SCHEMATA: polarity
+aar:polarity aamas:lang aama:Aari .
+aar:Polarity aamas:lang aama:Aari .
+aar:polarity rdfs:domain aamas:Term .
+aar:Polarity rdfs:label "polarity exponents" .
+aar:polarity rdfs:label "polarity" .
+aar:polarity rdfs:range aar:Polarity .
+aar:Polarity rdfs:subClassOf aar:MuExponent .
+aar:polarity rdfs:subPropertyOf aar:muProperty .
+aar:Affirmative aamas:lang aama:Aari .
+aar:Affirmative rdf:type aar:Polarity .
+aar:Affirmative rdfs:label "Affirmative" .
+aar:Negative aamas:lang aama:Aari .
+aar:Negative rdf:type aar:Polarity .
+aar:Negative rdfs:label "Negative" .
+
+#SCHEMATA: tam
+aar:tam aamas:lang aama:Aari .
+aar:Tam aamas:lang aama:Aari .
+aar:tam rdfs:domain aamas:Term .
+aar:Tam rdfs:label "tam exponents" .
+aar:tam rdfs:label "tam" .
+aar:tam rdfs:range aar:Tam .
+aar:Tam rdfs:subClassOf aar:MuExponent .
+aar:tam rdfs:subPropertyOf aar:muProperty .
+aar:Aorist aamas:lang aama:Aari .
+aar:Aorist rdf:type aar:Tam .
+aar:Aorist rdfs:label "Aorist" .
+aar:Future aamas:lang aama:Aari .
+aar:Future rdf:type aar:Tam .
+aar:Future rdfs:label "Future" .
+aar:Imperative aamas:lang aama:Aari .
+aar:Imperative rdf:type aar:Tam .
+aar:Imperative rdfs:label "Imperative" .
+aar:Jussive aamas:lang aama:Aari .
+aar:Jussive rdf:type aar:Tam .
+aar:Jussive rdfs:label "Jussive" .
+aar:NA aamas:lang aama:Aari .
+aar:NA rdf:type aar:Tam .
+aar:NA rdfs:label "NA" .
+aar:Optative aamas:lang aama:Aari .
+aar:Optative rdf:type aar:Tam .
+aar:Optative rdfs:label "Optative" .
+aar:Past aamas:lang aama:Aari .
+aar:Past rdf:type aar:Tam .
+aar:Past rdfs:label "Past" .
+aar:Permissive aamas:lang aama:Aari .
+aar:Permissive rdf:type aar:Tam .
+aar:Permissive rdfs:label "Permissive" .
+aar:Present aamas:lang aama:Aari .
+aar:Present rdf:type aar:Tam .
+aar:Present rdfs:label "Present" .
+
+#SCHEMATA: postpositionClass
+aar:postpositionClass aamas:lang aama:Aari .
+aar:Postpositionclass aamas:lang aama:Aari .
+aar:postpositionClass rdfs:domain aamas:Term .
+aar:Postpositionclass rdfs:label "postpositionClass exponents" .
+aar:postpositionClass rdfs:label "postpositionClass" .
+aar:postpositionClass rdfs:range aar:Postpositionclass .
+aar:Postpositionclass rdfs:subClassOf aar:MuExponent .
+aar:postpositionClass rdfs:subPropertyOf aar:muProperty .
+
+#SCHEMATA: gender
+aar:gender aamas:lang aama:Aari .
+aar:Gender aamas:lang aama:Aari .
+aar:gender rdfs:domain aamas:Term .
+aar:Gender rdfs:label "gender exponents" .
+aar:gender rdfs:label "gender" .
+aar:gender rdfs:range aar:Gender .
+aar:Gender rdfs:subClassOf aar:MuExponent .
+aar:gender rdfs:subPropertyOf aar:muProperty .
+aar:Common aamas:lang aama:Aari .
+aar:Common rdf:type aar:Gender .
+aar:Common rdfs:label "Common" .
+aar:Fem aamas:lang aama:Aari .
+aar:Fem rdf:type aar:Gender .
+aar:Fem rdfs:label "Fem" .
+aar:Masc aamas:lang aama:Aari .
+aar:Masc rdf:type aar:Gender .
+aar:Masc rdfs:label "Masc" .
+
+#SCHEMATA: pluralClass
+aar:pluralClass aamas:lang aama:Aari .
+aar:Pluralclass aamas:lang aama:Aari .
+aar:pluralClass rdfs:domain aamas:Term .
+aar:Pluralclass rdfs:label "pluralClass exponents" .
+aar:pluralClass rdfs:label "pluralClass" .
+aar:pluralClass rdfs:range aar:Pluralclass .
+aar:Pluralclass rdfs:subClassOf aar:MuExponent .
+aar:pluralClass rdfs:subPropertyOf aar:muProperty .
+
+#SCHEMATA: nmorphClass
+aar:nmorphClass aamas:lang aama:Aari .
+aar:Nmorphclass aamas:lang aama:Aari .
+aar:nmorphClass rdfs:domain aamas:Term .
+aar:Nmorphclass rdfs:label "nmorphClass exponents" .
+aar:nmorphClass rdfs:label "nmorphClass" .
+aar:nmorphClass rdfs:range aar:Nmorphclass .
+aar:Nmorphclass rdfs:subClassOf aar:MuExponent .
+aar:nmorphClass rdfs:subPropertyOf aar:muProperty .
+aar:PLMARK aamas:lang aama:Aari .
+aar:PLMARK rdf:type aar:Nmorphclass .
+aar:PLMARK rdfs:label "PLMARK" .
+aar:POSTPOSITION aamas:lang aama:Aari .
+aar:POSTPOSITION rdf:type aar:Nmorphclass .
+aar:POSTPOSITION rdfs:label "POSTPOSITION" .
+
+#SCHEMATA: defClass
+aar:defClass aamas:lang aama:Aari .
+aar:Defclass aamas:lang aama:Aari .
+aar:defClass rdfs:domain aamas:Term .
+aar:Defclass rdfs:label "defClass exponents" .
+aar:defClass rdfs:label "defClass" .
+aar:defClass rdfs:range aar:Defclass .
+aar:Defclass rdfs:subClassOf aar:MuExponent .
+aar:defClass rdfs:subPropertyOf aar:muProperty .
+aar:DefClass1 aamas:lang aama:Aari .
+aar:DefClass1 rdf:type aar:Defclass .
+aar:DefClass1 rdfs:label "DefClass1" .
+aar:DefClass2 aamas:lang aama:Aari .
+aar:DefClass2 rdf:type aar:Defclass .
+aar:DefClass2 rdfs:label "DefClass2" .
+aar:DefClass3 aamas:lang aama:Aari .
+aar:DefClass3 rdf:type aar:Defclass .
+aar:DefClass3 rdfs:label "DefClass3" .
+
+#SCHEMATA: deixis
+aar:deixis aamas:lang aama:Aari .
+aar:Deixis aamas:lang aama:Aari .
+aar:deixis rdfs:domain aamas:Term .
+aar:Deixis rdfs:label "deixis exponents" .
+aar:deixis rdfs:label "deixis" .
+aar:deixis rdfs:range aar:Deixis .
+aar:Deixis rdfs:subClassOf aar:MuExponent .
+aar:deixis rdfs:subPropertyOf aar:muProperty .
+aar:Far aamas:lang aama:Aari .
+aar:Far rdf:type aar:Deixis .
+aar:Far rdfs:label "Far" .
+aar:Near aamas:lang aama:Aari .
+aar:Near rdf:type aar:Deixis .
+aar:Near rdfs:label "Near" .
+
+#SCHEMATA: rootClass
+aar:rootClass aamas:lang aama:Aari .
+aar:Rootclass aamas:lang aama:Aari .
+aar:rootClass rdfs:domain aamas:Term .
+aar:Rootclass rdfs:label "rootClass exponents" .
+aar:rootClass rdfs:label "rootClass" .
+aar:rootClass rdfs:range aar:Rootclass .
+aar:Rootclass rdfs:subClassOf aar:MuExponent .
+aar:rootClass rdfs:subPropertyOf aar:muProperty .
+aar:CCC aamas:lang aama:Aari .
+aar:CCC rdf:type aar:Rootclass .
+aar:CCC rdfs:label "CCC" .
+aar:CCY aamas:lang aama:Aari .
+aar:CCY rdf:type aar:Rootclass .
+aar:CCY rdfs:label "CCY" .
+aar:CVC aamas:lang aama:Aari .
+aar:CVC rdf:type aar:Rootclass .
+aar:CVC rdfs:label "CVC" .
+aar:Invar aamas:lang aama:Aari .
+aar:Invar rdf:type aar:Rootclass .
+aar:Invar rdfs:label "Invar" .
+
+#PCLASSES:
+
+aar:person aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+aar:number aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+aar:gender aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+aar:case aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+aar:defClass aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+aar:deixis aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+aar:derivedStem aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+aar:derivedStemAug aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+aar:participle aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+aar:polarity aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+aar:pos aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+aar:proClass aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+aar:tam aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+aar:conjClass aamas:pclass aamas:inflClass .
+aamas:inflClass rdfs:label "inflClass" .
+aar:pluralClass aamas:pclass aamas:inflClass .
+aamas:inflClass rdfs:label "inflClass" .
+aar:postpositionClass aamas:pclass aamas:inflClass .
+aamas:inflClass rdfs:label "inflClass" .
+aar:rootClass aamas:pclass aamas:inflClass .
+aamas:inflClass rdfs:label "inflClass" .
+
+#LEXEMES:
+aama:Aari-token a aamas:Lexeme ;
+	aamas:lang aama:Aari ;
+	rdfs:label "token" ;
+	aar:conjClass aar:token ;
+	aar:derivedStem aar:token ;
+	aar:rootClass aar:token ;
+	aamas:lemma "" ;
+	aamas:gloss "" ;
+	.
+
+#TERMCLUSTER:  Finite_Verb_Paradigms_to_be_added
+
+aar:Finite_Verb_Paradigms_to_be_added a aamas:Termcluster ;
+	rdfs:label "Finite_Verb_Paradigms_to_be_added" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "" 
+	.
+
+aama:IDafc63d7d-4681-4491-bb06-5f3f4981ccfc a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:Finite_Verb_Paradigms_to_be_added ;
+	aar:vmorphClass aar:FiniteToBeAdded ;
+	aar:pos aar:Verb ;
+	aar:person aar:To_be_added ;
+	aar:tam aar:To_be_added ;
+	aar:token "not attested" ;
+	.
+
+#TERMCLUSTER:  Pronominal_Paradigms_to_be_added
+
+aar:Pronominal_Paradigms_to_be_added a aamas:Termcluster ;
+	rdfs:label "Pronominal_Paradigms_to_be_added" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "" 
+	.
+
+aama:ID45df8105-1e8c-43a0-8532-feea141e0731 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:Pronominal_Paradigms_to_be_added ;
+	aar:pos aar:Pronoun ;
+	aar:pmorphClass aar:ProMorph ;
+	aar:proClass aar:To_be_added ;
+	aar:token "not attested" ;
+	.
