@@ -1,5 +1,5 @@
 #TTL FROM INPUT FILE:
-#../aama-data/data//aari/aari-pdgms.edn
+#../aama-data/data/aari/aari-pdgms.edn
 
 @prefix rdf:	 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:	 <http://www.w3.org/2000/01/rdf-schema#> .
@@ -450,6 +450,8 @@ aar:rootClass aamas:pclass aamas:inflClass .
 aamas:inflClass rdfs:label "inflClass" .
 
 #LEXEMES:
+
+##LexItems
 aama:Aari-token a aamas:Lexeme ;
 	aamas:lang aama:Aari ;
 	rdfs:label "token" ;
@@ -468,7 +470,7 @@ aar:Finite_Verb_Paradigms_to_be_added a aamas:Termcluster ;
 	rdfs:comment "" 
 	.
 
-aama:IDafc63d7d-4681-4491-bb06-5f3f4981ccfc a aamas:Term ;
+aama:ID8042128f-bb82-4911-b864-e1e48377ef8d a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:Finite_Verb_Paradigms_to_be_added ;
 	aar:vmorphClass aar:FiniteToBeAdded ;
@@ -486,7 +488,7 @@ aar:Pronominal_Paradigms_to_be_added a aamas:Termcluster ;
 	rdfs:comment "" 
 	.
 
-aama:ID45df8105-1e8c-43a0-8532-feea141e0731 a aamas:Term ;
+aama:ID3168034e-e387-4439-b40f-73562cec150d a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:Pronominal_Paradigms_to_be_added ;
 	aar:pos aar:Pronoun ;
