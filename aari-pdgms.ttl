@@ -15,7 +15,7 @@ aama:Aari a aamas:Language .
 aama:Aari rdfs:label "Aari" .
 aama:Aari aamas:subfamily "SouthOmotic" .
 aama:Aari aamas:lpref "aar" .
-aama:Aari aamas:dataSource "Hayward1990c" .
+aama:Aari aamas:dataSource "Hayward1990c, abbreviated in :note as HAAp." .
 aama:Aari aamas:dataSourceNotes "" .
 aama:Aari aamas:geodemoURL "http://www.ethnologue.com/language/aiw" .
 aama:Aari aamas:geodemoTXT "Speakers: 298%%300%% all users. L1 users: 285%%000 (2010 UNSD). L2 users: 13%%300. 129%%000 monolinguals. Location: SW Ethiopia%% Southern Nations%% Nationalities%% and Peoples’ region: central north Omo zone%% south tip of Ethiopia plateau." .
@@ -467,10 +467,10 @@ aama:Aari-token a aamas:Lexeme ;
 aar:Finite_Verb_Paradigms_to_be_added a aamas:Termcluster ;
 	rdfs:label "Finite_Verb_Paradigms_to_be_added" ;
 	aamas:lang aama:Aari ;
-	rdfs:comment "" 
+	rdfs:comment "HAAp." 
 	.
 
-aama:ID8042128f-bb82-4911-b864-e1e48377ef8d a aamas:Term ;
+aama:ID68dd7b75-c1e8-408d-a7a5-c8e9ca1115a8 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:Finite_Verb_Paradigms_to_be_added ;
 	aar:vmorphClass aar:FiniteToBeAdded ;
@@ -485,10 +485,10 @@ aama:ID8042128f-bb82-4911-b864-e1e48377ef8d a aamas:Term ;
 aar:Pronominal_Paradigms_to_be_added a aamas:Termcluster ;
 	rdfs:label "Pronominal_Paradigms_to_be_added" ;
 	aamas:lang aama:Aari ;
-	rdfs:comment "" 
+	rdfs:comment "HAAp." 
 	.
 
-aama:ID3168034e-e387-4439-b40f-73562cec150d a aamas:Term ;
+aama:IDb92a9b58-2521-4250-81b0-edecb6b1a8d7 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:Pronominal_Paradigms_to_be_added ;
 	aar:pos aar:Pronoun ;

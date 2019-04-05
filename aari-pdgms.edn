@@ -2,7 +2,7 @@
  :lang :aari
  :subfamily "SouthOmotic"
  :sgpref "aar"
- :datasource "Hayward1990c"
+ :datasource "Hayward1990c, abbreviated in :note as HAAp."
  :datasourceNotes ""
  :geodemoURL "http://www.ethnologue.com/language/aiw"
  :geodemoTXT "Speakers: 298,300, all users. L1 users: 285,000 (2010 UNSD). L2 users: 13,300. 129,000 monolinguals. Location: SW Ethiopia, Southern Nations, Nationalities, and Peoples’ region: central north Omo zone, south tip of Ethiopia plateau."
@@ -33,6 +33,7 @@
  :termclusters [
 
            {:label "Finite_Verb_Paradigms_to_be_added"
+            :note "HAAp."
             :common {:vmorphClass :FiniteToBeAdded
                      :pos :Verb,
                      ;; needs :person and one other prop to pass muster
@@ -42,6 +43,7 @@
                     [  "not attested"]]
             }
            {:label "Pronominal_Paradigms_to_be_added"
+            :note "HAAp."
             :common {:pos :Pronoun, :pmorphClass :ProMorph,
                      :proClass :To_be_added}
             :terms [[:token],
