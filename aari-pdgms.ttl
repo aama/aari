@@ -1,498 +1,1689 @@
 #TTL FROM INPUT FILE:
-#../aama-data/data/aari/aari-pdgms.edn
+#data/aari-pdgms.json
 
-@prefix rdf:	 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:	 <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc:    <http://purl.org/dc/elements>.
-@prefix dcterms:    <http://purl.org/dc/terms>.
-@prefix aama:	 <http://id.oi.uchicago.edu/aama/2013/> .
+
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:      <http://purl.org/dc/elements> .
+@prefix dcterms: <http://purl.org/dc/terms> .
+@prefix aama:    <http://id.oi.uchicago.edu/aama/2013/> .
 @prefix aamas:	 <http://id.oi.uchicago.edu/aama/2013/schema/> .
-@prefix aar:   <http://id.oi.uchicago.edu/aama/2013/aari/> .
+@prefix aar:     <http://id.oi.uchicago.edu/aama/2013/aari/> .
 
 #LANG INFO:
 
-aama:Aari a aamas:Language .
+aama:Aari a aamas:Language.
 aama:Aari rdfs:label "Aari" .
-aama:Aari aamas:subfamily "SouthOmotic" .
+aama:Aari aamas:subfamily "Omotic South" .
 aama:Aari aamas:lpref "aar" .
-aama:Aari aamas:dataSource "Hayward1990c, abbreviated in :note as HAAp." .
-aama:Aari aamas:dataSourceNotes "" .
+aama:Aari aamas:dataSource "Hayward, Richard. 1990. 'Notes on the Aari Language' In Richard Hayward (Ed.), Omotic Language Studies, pp. 425-493; Røsok, Marie Iversdatter. 2016. 'The Sound Pattern of Aari'. MA Thesis in Linguistics. Department of Linguistics and Scandinavian Studies. University of Oslo. [HAp.;Rp.]" .
 aama:Aari aamas:geodemoURL "http://www.ethnologue.com/language/aiw" .
-aama:Aari aamas:geodemoTXT "Speakers: 298%%300%% all users. L1 users: 285%%000 (2010 UNSD). L2 users: 13%%300. 129%%000 monolinguals. Location: SW Ethiopia%% Southern Nations%% Nationalities%% and Peoples’ region: central north Omo zone%% south tip of Ethiopia plateau." .
+aama:Aari aamas:geodemoTxt "Speakers: 298,300, all users. L1 users: 285,000 (2010 UNSD). L2 users: 13,300. 129,000 monolinguals. Location: SW Ethiopia, Southern Nations, Nationalities, and Peoples’ region: central north Omo zone, south tip of Ethiopia plateau." .
 
+#SCHEMATA: gender
+aar:gender aamas:lang aama:Aari .
+aar:GENDER aamas:lang aama:Aari .
+aar:gender rdfs:domain aamas:Term .
+aar:GENDER rdfs:label "gender exponents" .
+aar:gender rdfs:label "gender" .
+aar:gender rdfs:range aar:GENDER .
+aar:GENDER rdfs:subClassOf aar:MuExponent .
+aar:gender rdfs:subPropertyOf aar:muProperty .
+aar:Common aamas:lang aama:Aari .
+aar:Common rdf:type aamas:GENDER .
+aar:Common rdfs:label "Common" .
+aar:Fem aamas:lang aama:Aari .
+aar:Fem rdf:type aamas:GENDER .
+aar:Fem rdfs:label "Fem" .
+aar:Masc aamas:lang aama:Aari .
+aar:Masc rdf:type aamas:GENDER .
+aar:Masc rdfs:label "Masc" .
 
-#SCHEMATA: participle
-aar:participle aamas:lang aama:Aari .
-aar:Participle aamas:lang aama:Aari .
-aar:participle rdfs:domain aamas:Term .
-aar:Participle rdfs:label "participle exponents" .
-aar:participle rdfs:label "participle" .
-aar:participle rdfs:range aar:Participle .
-aar:Participle rdfs:subClassOf aar:MuExponent .
-aar:participle rdfs:subPropertyOf aar:muProperty .
-
-#SCHEMATA: person
-aar:person aamas:lang aama:Aari .
-aar:Person aamas:lang aama:Aari .
-aar:person rdfs:domain aamas:Term .
-aar:Person rdfs:label "person exponents" .
-aar:person rdfs:label "person" .
-aar:person rdfs:range aar:Person .
-aar:Person rdfs:subClassOf aar:MuExponent .
-aar:person rdfs:subPropertyOf aar:muProperty .
-aar:Person1 aamas:lang aama:Aari .
-aar:Person1 rdf:type aar:Person .
-aar:Person1 rdfs:label "Person1" .
-aar:Person2 aamas:lang aama:Aari .
-aar:Person2 rdf:type aar:Person .
-aar:Person2 rdfs:label "Person2" .
-aar:Person3 aamas:lang aama:Aari .
-aar:Person3 rdf:type aar:Person .
-aar:Person3 rdfs:label "Person3" .
-
-#SCHEMATA: derivedStem
-aar:derivedStem aamas:lang aama:Aari .
-aar:Derivedstem aamas:lang aama:Aari .
-aar:derivedStem rdfs:domain aamas:Term .
-aar:Derivedstem rdfs:label "derivedStem exponents" .
-aar:derivedStem rdfs:label "derivedStem" .
-aar:derivedStem rdfs:range aar:Derivedstem .
-aar:Derivedstem rdfs:subClassOf aar:MuExponent .
-aar:derivedStem rdfs:subPropertyOf aar:muProperty .
-aar:B aamas:lang aama:Aari .
-aar:B rdf:type aar:Derivedstem .
-aar:B rdfs:label "B" .
-aar:BIntensive aamas:lang aama:Aari .
-aar:BIntensive rdf:type aar:Derivedstem .
-aar:BIntensive rdfs:label "BIntensive" .
-aar:M aamas:lang aama:Aari .
-aar:M rdf:type aar:Derivedstem .
-aar:M rdfs:label "M" .
-aar:MIntensive aamas:lang aama:Aari .
-aar:MIntensive rdf:type aar:Derivedstem .
-aar:MIntensive rdfs:label "MIntensive" .
-aar:R aamas:lang aama:Aari .
-aar:R rdf:type aar:Derivedstem .
-aar:R rdfs:label "R" .
-aar:S aamas:lang aama:Aari .
-aar:S rdf:type aar:Derivedstem .
-aar:S rdfs:label "S" .
-aar:SIntensive aamas:lang aama:Aari .
-aar:SIntensive rdf:type aar:Derivedstem .
-aar:SIntensive rdfs:label "SIntensive" .
-aar:SMIntensive aamas:lang aama:Aari .
-aar:SMIntensive rdf:type aar:Derivedstem .
-aar:SMIntensive rdfs:label "SMIntensive" .
-aar:SS aamas:lang aama:Aari .
-aar:SS rdf:type aar:Derivedstem .
-aar:SS rdfs:label "SS" .
-aar:T aamas:lang aama:Aari .
-aar:T rdf:type aar:Derivedstem .
-aar:T rdfs:label "T" .
-aar:TIntensive aamas:lang aama:Aari .
-aar:TIntensive rdf:type aar:Derivedstem .
-aar:TIntensive rdfs:label "TIntensive" .
+#SCHEMATA: lexeme
+aar:lexeme aamas:lang aama:Aari .
+aar:LEXEME aamas:lang aama:Aari .
+aar:lexeme rdfs:domain aamas:Term .
+aar:LEXEME rdfs:label "lexeme exponents" .
+aar:lexeme rdfs:label "lexeme" .
+aar:lexeme rdfs:range aar:LEXEME .
+aar:LEXEME rdfs:subClassOf aar:MuExponent .
+aar:lexeme rdfs:subPropertyOf aar:muProperty .
+aar:ba? aamas:lang aama:Aari .
+aar:ba? rdf:type aamas:LEXEME .
+aar:ba? rdfs:label "ba?" .
 
 #SCHEMATA: number
 aar:number aamas:lang aama:Aari .
-aar:Number aamas:lang aama:Aari .
+aar:NUMBER aamas:lang aama:Aari .
 aar:number rdfs:domain aamas:Term .
-aar:Number rdfs:label "number exponents" .
+aar:NUMBER rdfs:label "number exponents" .
 aar:number rdfs:label "number" .
-aar:number rdfs:range aar:Number .
-aar:Number rdfs:subClassOf aar:MuExponent .
+aar:number rdfs:range aar:NUMBER .
+aar:NUMBER rdfs:subClassOf aar:MuExponent .
 aar:number rdfs:subPropertyOf aar:muProperty .
 aar:Plural aamas:lang aama:Aari .
-aar:Plural rdf:type aar:Number .
+aar:Plural rdf:type aamas:NUMBER .
 aar:Plural rdfs:label "Plural" .
 aar:Singular aamas:lang aama:Aari .
-aar:Singular rdf:type aar:Number .
+aar:Singular rdf:type aamas:NUMBER .
 aar:Singular rdfs:label "Singular" .
-aar:_NA aamas:lang aama:Aari .
-aar:_NA rdf:type aar:Number .
-aar:_NA rdfs:label "_NA" .
 
-#SCHEMATA: vmorphClass
-aar:vmorphClass aamas:lang aama:Aari .
-aar:Vmorphclass aamas:lang aama:Aari .
-aar:vmorphClass rdfs:domain aamas:Term .
-aar:Vmorphclass rdfs:label "vmorphClass exponents" .
-aar:vmorphClass rdfs:label "vmorphClass" .
-aar:vmorphClass rdfs:range aar:Vmorphclass .
-aar:Vmorphclass rdfs:subClassOf aar:MuExponent .
-aar:vmorphClass rdfs:subPropertyOf aar:muProperty .
-aar:FiniteToBeAdded aamas:lang aama:Aari .
-aar:FiniteToBeAdded rdf:type aar:Vmorphclass .
-aar:FiniteToBeAdded rdfs:label "FiniteToBeAdded" .
-aar:Affix_SubjMark aamas:lang aama:Aari .
-aar:Affix_SubjMark rdf:type aar:Vmorphclass .
-aar:Affix_SubjMark rdfs:label "Affix_SubjMark" .
-aar:NonFin_Participles aamas:lang aama:Aari .
-aar:NonFin_Participles rdf:type aar:Vmorphclass .
-aar:NonFin_Participles rdfs:label "NonFin_Participles" .
-aar:Stem_DervSem aamas:lang aama:Aari .
-aar:Stem_DervSem rdf:type aar:Vmorphclass .
-aar:Stem_DervSem rdfs:label "Stem_DervSem" .
-aar:Stem_DervTense aamas:lang aama:Aari .
-aar:Stem_DervTense rdf:type aar:Vmorphclass .
-aar:Stem_DervTense rdfs:label "Stem_DervTense" .
-aar:Stem_Tam aamas:lang aama:Aari .
-aar:Stem_Tam rdf:type aar:Vmorphclass .
-aar:Stem_Tam rdfs:label "Stem_Tam" .
+#SCHEMATA: person
+aar:person aamas:lang aama:Aari .
+aar:PERSON aamas:lang aama:Aari .
+aar:person rdfs:domain aamas:Term .
+aar:PERSON rdfs:label "person exponents" .
+aar:person rdfs:label "person" .
+aar:person rdfs:range aar:PERSON .
+aar:PERSON rdfs:subClassOf aar:MuExponent .
+aar:person rdfs:subPropertyOf aar:muProperty .
+aar:Person1 aamas:lang aama:Aari .
+aar:Person1 rdf:type aamas:PERSON .
+aar:Person1 rdfs:label "Person1" .
+aar:Person2 aamas:lang aama:Aari .
+aar:Person2 rdf:type aamas:PERSON .
+aar:Person2 rdfs:label "Person2" .
+aar:Person3 aamas:lang aama:Aari .
+aar:Person3 rdf:type aamas:PERSON .
+aar:Person3 rdfs:label "Person3" .
+
+#SCHEMATA: polarity
+aar:polarity aamas:lang aama:Aari .
+aar:POLARITY aamas:lang aama:Aari .
+aar:polarity rdfs:domain aamas:Term .
+aar:POLARITY rdfs:label "polarity exponents" .
+aar:polarity rdfs:label "polarity" .
+aar:polarity rdfs:range aar:POLARITY .
+aar:POLARITY rdfs:subClassOf aar:MuExponent .
+aar:polarity rdfs:subPropertyOf aar:muProperty .
+aar:Affirmative aamas:lang aama:Aari .
+aar:Affirmative rdf:type aamas:POLARITY .
+aar:Affirmative rdfs:label "Affirmative" .
+aar:Negative aamas:lang aama:Aari .
+aar:Negative rdf:type aamas:POLARITY .
+aar:Negative rdfs:label "Negative" .
+aar:kkkNegative aamas:lang aama:Aari .
+aar:kkkNegative rdf:type aamas:POLARITY .
+aar:kkkNegative rdfs:label "kkkNegative" .
 
 #SCHEMATA: pos
 aar:pos aamas:lang aama:Aari .
-aar:Pos aamas:lang aama:Aari .
+aar:POS aamas:lang aama:Aari .
 aar:pos rdfs:domain aamas:Term .
-aar:Pos rdfs:label "pos exponents" .
+aar:POS rdfs:label "pos exponents" .
 aar:pos rdfs:label "pos" .
-aar:pos rdfs:range aar:Pos .
-aar:Pos rdfs:subClassOf aar:MuExponent .
+aar:pos rdfs:range aar:POS .
+aar:POS rdfs:subClassOf aar:MuExponent .
 aar:pos rdfs:subPropertyOf aar:muProperty .
-aar:Noun aamas:lang aama:Aari .
-aar:Noun rdf:type aar:Pos .
-aar:Noun rdfs:label "Noun" .
 aar:Pronoun aamas:lang aama:Aari .
-aar:Pronoun rdf:type aar:Pos .
+aar:Pronoun rdf:type aamas:POS .
 aar:Pronoun rdfs:label "Pronoun" .
 aar:Verb aamas:lang aama:Aari .
-aar:Verb rdf:type aar:Pos .
+aar:Verb rdf:type aamas:POS .
 aar:Verb rdfs:label "Verb" .
 
 #SCHEMATA: proClass
 aar:proClass aamas:lang aama:Aari .
-aar:Proclass aamas:lang aama:Aari .
+aar:PROCLASS aamas:lang aama:Aari .
 aar:proClass rdfs:domain aamas:Term .
-aar:Proclass rdfs:label "proClass exponents" .
+aar:PROCLASS rdfs:label "proClass exponents" .
 aar:proClass rdfs:label "proClass" .
-aar:proClass rdfs:range aar:Proclass .
-aar:Proclass rdfs:subClassOf aar:MuExponent .
+aar:proClass rdfs:range aar:PROCLASS .
+aar:PROCLASS rdfs:subClassOf aar:MuExponent .
 aar:proClass rdfs:subPropertyOf aar:muProperty .
-aar:DefMarker aamas:lang aama:Aari .
-aar:DefMarker rdf:type aar:Proclass .
-aar:DefMarker rdfs:label "DefMarker" .
-aar:Demonstrative aamas:lang aama:Aari .
-aar:Demonstrative rdf:type aar:Proclass .
-aar:Demonstrative rdfs:label "Demonstrative" .
-aar:Independent aamas:lang aama:Aari .
-aar:Independent rdf:type aar:Proclass .
-aar:Independent rdfs:label "Independent" .
-aar:PossObj aamas:lang aama:Aari .
-aar:PossObj rdf:type aar:Proclass .
-aar:PossObj rdfs:label "PossObj" .
-aar:ProComp aamas:lang aama:Aari .
-aar:ProComp rdf:type aar:Proclass .
-aar:ProComp rdfs:label "ProComp" .
-
-#SCHEMATA: conjClass
-aar:conjClass aamas:lang aama:Aari .
-aar:Conjclass aamas:lang aama:Aari .
-aar:conjClass rdfs:domain aamas:Term .
-aar:Conjclass rdfs:label "conjClass exponents" .
-aar:conjClass rdfs:label "conjClass" .
-aar:conjClass rdfs:range aar:Conjclass .
-aar:Conjclass rdfs:subClassOf aar:MuExponent .
-aar:conjClass rdfs:subPropertyOf aar:muProperty .
-aar:Enclitic aamas:lang aama:Aari .
-aar:Enclitic rdf:type aar:Conjclass .
-aar:Enclitic rdfs:label "Enclitic" .
-aar:Prefix aamas:lang aama:Aari .
-aar:Prefix rdf:type aar:Conjclass .
-aar:Prefix rdfs:label "Prefix" .
-aar:Suffix aamas:lang aama:Aari .
-aar:Suffix rdf:type aar:Conjclass .
-aar:Suffix rdfs:label "Suffix" .
-
-#SCHEMATA: pmorphClass
-aar:pmorphClass aamas:lang aama:Aari .
-aar:Pmorphclass aamas:lang aama:Aari .
-aar:pmorphClass rdfs:domain aamas:Term .
-aar:Pmorphclass rdfs:label "pmorphClass exponents" .
-aar:pmorphClass rdfs:label "pmorphClass" .
-aar:pmorphClass rdfs:range aar:Pmorphclass .
-aar:Pmorphclass rdfs:subClassOf aar:MuExponent .
-aar:pmorphClass rdfs:subPropertyOf aar:muProperty .
-aar:ProMorph aamas:lang aama:Aari .
-aar:ProMorph rdf:type aar:Pmorphclass .
-aar:ProMorph rdfs:label "ProMorph" .
-
-#SCHEMATA: case
-aar:case aamas:lang aama:Aari .
-aar:Case aamas:lang aama:Aari .
-aar:case rdfs:domain aamas:Term .
-aar:Case rdfs:label "case exponents" .
-aar:case rdfs:label "case" .
-aar:case rdfs:range aar:Case .
-aar:Case rdfs:subClassOf aar:MuExponent .
-aar:case rdfs:subPropertyOf aar:muProperty .
-aar:Ablative aamas:lang aama:Aari .
-aar:Ablative rdf:type aar:Case .
-aar:Ablative rdfs:label "Ablative" .
-aar:Equative aamas:lang aama:Aari .
-aar:Equative rdf:type aar:Case .
-aar:Equative rdfs:label "Equative" .
-aar:Locative aamas:lang aama:Aari .
-aar:Locative rdf:type aar:Case .
-aar:Locative rdfs:label "Locative" .
-aar:Nom_obj aamas:lang aama:Aari .
-aar:Nom_obj rdf:type aar:Case .
-aar:Nom_obj rdfs:label "Nom_obj" .
+aar:Nominative-red aamas:lang aama:Aari .
+aar:Nominative-red rdf:type aamas:PROCLASS .
+aar:Nominative-red rdfs:label "Nominative-red" .
 aar:Object aamas:lang aama:Aari .
-aar:Object rdf:type aar:Case .
+aar:Object rdf:type aamas:PROCLASS .
 aar:Object rdfs:label "Object" .
 aar:Possessive aamas:lang aama:Aari .
-aar:Possessive rdf:type aar:Case .
+aar:Possessive rdf:type aamas:PROCLASS .
 aar:Possessive rdfs:label "Possessive" .
+aar:Reflexive aamas:lang aama:Aari .
+aar:Reflexive rdf:type aamas:PROCLASS .
+aar:Reflexive rdfs:label "Reflexive" .
 aar:Subject aamas:lang aama:Aari .
-aar:Subject rdf:type aar:Case .
+aar:Subject rdf:type aamas:PROCLASS .
 aar:Subject rdfs:label "Subject" .
-
-#SCHEMATA: polarity
-aar:polarity aamas:lang aama:Aari .
-aar:Polarity aamas:lang aama:Aari .
-aar:polarity rdfs:domain aamas:Term .
-aar:Polarity rdfs:label "polarity exponents" .
-aar:polarity rdfs:label "polarity" .
-aar:polarity rdfs:range aar:Polarity .
-aar:Polarity rdfs:subClassOf aar:MuExponent .
-aar:polarity rdfs:subPropertyOf aar:muProperty .
-aar:Affirmative aamas:lang aama:Aari .
-aar:Affirmative rdf:type aar:Polarity .
-aar:Affirmative rdfs:label "Affirmative" .
-aar:Negative aamas:lang aama:Aari .
-aar:Negative rdf:type aar:Polarity .
-aar:Negative rdfs:label "Negative" .
 
 #SCHEMATA: tam
 aar:tam aamas:lang aama:Aari .
-aar:Tam aamas:lang aama:Aari .
+aar:TAM aamas:lang aama:Aari .
 aar:tam rdfs:domain aamas:Term .
-aar:Tam rdfs:label "tam exponents" .
+aar:TAM rdfs:label "tam exponents" .
 aar:tam rdfs:label "tam" .
-aar:tam rdfs:range aar:Tam .
-aar:Tam rdfs:subClassOf aar:MuExponent .
+aar:tam rdfs:range aar:TAM .
+aar:TAM rdfs:subClassOf aar:MuExponent .
 aar:tam rdfs:subPropertyOf aar:muProperty .
-aar:Aorist aamas:lang aama:Aari .
-aar:Aorist rdf:type aar:Tam .
-aar:Aorist rdfs:label "Aorist" .
 aar:Future aamas:lang aama:Aari .
-aar:Future rdf:type aar:Tam .
+aar:Future rdf:type aamas:TAM .
 aar:Future rdfs:label "Future" .
 aar:Imperative aamas:lang aama:Aari .
-aar:Imperative rdf:type aar:Tam .
+aar:Imperative rdf:type aamas:TAM .
 aar:Imperative rdfs:label "Imperative" .
+aar:Imperfact aamas:lang aama:Aari .
+aar:Imperfact rdf:type aamas:TAM .
+aar:Imperfact rdfs:label "Imperfact" .
+aar:Imperfect aamas:lang aama:Aari .
+aar:Imperfect rdf:type aamas:TAM .
+aar:Imperfect rdfs:label "Imperfect" .
+aar:ImperfectPast aamas:lang aama:Aari .
+aar:ImperfectPast rdf:type aamas:TAM .
+aar:ImperfectPast rdfs:label "ImperfectPast" .
 aar:Jussive aamas:lang aama:Aari .
-aar:Jussive rdf:type aar:Tam .
+aar:Jussive rdf:type aamas:TAM .
 aar:Jussive rdfs:label "Jussive" .
-aar:NA aamas:lang aama:Aari .
-aar:NA rdf:type aar:Tam .
-aar:NA rdfs:label "NA" .
-aar:Optative aamas:lang aama:Aari .
-aar:Optative rdf:type aar:Tam .
-aar:Optative rdfs:label "Optative" .
-aar:Past aamas:lang aama:Aari .
-aar:Past rdf:type aar:Tam .
-aar:Past rdfs:label "Past" .
-aar:Permissive aamas:lang aama:Aari .
-aar:Permissive rdf:type aar:Tam .
-aar:Permissive rdfs:label "Permissive" .
-aar:Present aamas:lang aama:Aari .
-aar:Present rdf:type aar:Tam .
-aar:Present rdfs:label "Present" .
+aar:Perfect aamas:lang aama:Aari .
+aar:Perfect rdf:type aamas:TAM .
+aar:Perfect rdfs:label "Perfect" .
+aar:Perfect1 aamas:lang aama:Aari .
+aar:Perfect1 rdf:type aamas:TAM .
+aar:Perfect1 rdfs:label "Perfect1" .
+aar:Perfect2 aamas:lang aama:Aari .
+aar:Perfect2 rdf:type aamas:TAM .
+aar:Perfect2 rdfs:label "Perfect2" .
+aar:PerfectPast aamas:lang aama:Aari .
+aar:PerfectPast rdf:type aamas:TAM .
+aar:PerfectPast rdfs:label "PerfectPast" .
+aar:PerfectPast1 aamas:lang aama:Aari .
+aar:PerfectPast1 rdf:type aamas:TAM .
+aar:PerfectPast1 rdfs:label "PerfectPast1" .
+aar:PerfectPast2 aamas:lang aama:Aari .
+aar:PerfectPast2 rdf:type aamas:TAM .
+aar:PerfectPast2 rdfs:label "PerfectPast2" .
 
-#SCHEMATA: postpositionClass
-aar:postpositionClass aamas:lang aama:Aari .
-aar:Postpositionclass aamas:lang aama:Aari .
-aar:postpositionClass rdfs:domain aamas:Term .
-aar:Postpositionclass rdfs:label "postpositionClass exponents" .
-aar:postpositionClass rdfs:label "postpositionClass" .
-aar:postpositionClass rdfs:range aar:Postpositionclass .
-aar:Postpositionclass rdfs:subClassOf aar:MuExponent .
-aar:postpositionClass rdfs:subPropertyOf aar:muProperty .
+#LEXEMES: Aari
 
-#SCHEMATA: gender
-aar:gender aamas:lang aama:Aari .
-aar:Gender aamas:lang aama:Aari .
-aar:gender rdfs:domain aamas:Term .
-aar:Gender rdfs:label "gender exponents" .
-aar:gender rdfs:label "gender" .
-aar:gender rdfs:range aar:Gender .
-aar:Gender rdfs:subClassOf aar:MuExponent .
-aar:gender rdfs:subPropertyOf aar:muProperty .
-aar:Common aamas:lang aama:Aari .
-aar:Common rdf:type aar:Gender .
-aar:Common rdfs:label "Common" .
-aar:Fem aamas:lang aama:Aari .
-aar:Fem rdf:type aar:Gender .
-aar:Fem rdfs:label "Fem" .
-aar:Masc aamas:lang aama:Aari .
-aar:Masc rdf:type aar:Gender .
-aar:Masc rdfs:label "Masc" .
+#LexItems: Aari
 
-#SCHEMATA: pluralClass
-aar:pluralClass aamas:lang aama:Aari .
-aar:Pluralclass aamas:lang aama:Aari .
-aar:pluralClass rdfs:domain aamas:Term .
-aar:Pluralclass rdfs:label "pluralClass exponents" .
-aar:pluralClass rdfs:label "pluralClass" .
-aar:pluralClass rdfs:range aar:Pluralclass .
-aar:Pluralclass rdfs:subClassOf aar:MuExponent .
-aar:pluralClass rdfs:subPropertyOf aar:muProperty .
-
-#SCHEMATA: nmorphClass
-aar:nmorphClass aamas:lang aama:Aari .
-aar:Nmorphclass aamas:lang aama:Aari .
-aar:nmorphClass rdfs:domain aamas:Term .
-aar:Nmorphclass rdfs:label "nmorphClass exponents" .
-aar:nmorphClass rdfs:label "nmorphClass" .
-aar:nmorphClass rdfs:range aar:Nmorphclass .
-aar:Nmorphclass rdfs:subClassOf aar:MuExponent .
-aar:nmorphClass rdfs:subPropertyOf aar:muProperty .
-aar:PLMARK aamas:lang aama:Aari .
-aar:PLMARK rdf:type aar:Nmorphclass .
-aar:PLMARK rdfs:label "PLMARK" .
-aar:POSTPOSITION aamas:lang aama:Aari .
-aar:POSTPOSITION rdf:type aar:Nmorphclass .
-aar:POSTPOSITION rdfs:label "POSTPOSITION" .
-
-#SCHEMATA: defClass
-aar:defClass aamas:lang aama:Aari .
-aar:Defclass aamas:lang aama:Aari .
-aar:defClass rdfs:domain aamas:Term .
-aar:Defclass rdfs:label "defClass exponents" .
-aar:defClass rdfs:label "defClass" .
-aar:defClass rdfs:range aar:Defclass .
-aar:Defclass rdfs:subClassOf aar:MuExponent .
-aar:defClass rdfs:subPropertyOf aar:muProperty .
-aar:DefClass1 aamas:lang aama:Aari .
-aar:DefClass1 rdf:type aar:Defclass .
-aar:DefClass1 rdfs:label "DefClass1" .
-aar:DefClass2 aamas:lang aama:Aari .
-aar:DefClass2 rdf:type aar:Defclass .
-aar:DefClass2 rdfs:label "DefClass2" .
-aar:DefClass3 aamas:lang aama:Aari .
-aar:DefClass3 rdf:type aar:Defclass .
-aar:DefClass3 rdfs:label "DefClass3" .
-
-#SCHEMATA: deixis
-aar:deixis aamas:lang aama:Aari .
-aar:Deixis aamas:lang aama:Aari .
-aar:deixis rdfs:domain aamas:Term .
-aar:Deixis rdfs:label "deixis exponents" .
-aar:deixis rdfs:label "deixis" .
-aar:deixis rdfs:range aar:Deixis .
-aar:Deixis rdfs:subClassOf aar:MuExponent .
-aar:deixis rdfs:subPropertyOf aar:muProperty .
-aar:Far aamas:lang aama:Aari .
-aar:Far rdf:type aar:Deixis .
-aar:Far rdfs:label "Far" .
-aar:Near aamas:lang aama:Aari .
-aar:Near rdf:type aar:Deixis .
-aar:Near rdfs:label "Near" .
-
-#SCHEMATA: rootClass
-aar:rootClass aamas:lang aama:Aari .
-aar:Rootclass aamas:lang aama:Aari .
-aar:rootClass rdfs:domain aamas:Term .
-aar:Rootclass rdfs:label "rootClass exponents" .
-aar:rootClass rdfs:label "rootClass" .
-aar:rootClass rdfs:range aar:Rootclass .
-aar:Rootclass rdfs:subClassOf aar:MuExponent .
-aar:rootClass rdfs:subPropertyOf aar:muProperty .
-aar:CCC aamas:lang aama:Aari .
-aar:CCC rdf:type aar:Rootclass .
-aar:CCC rdfs:label "CCC" .
-aar:CCY aamas:lang aama:Aari .
-aar:CCY rdf:type aar:Rootclass .
-aar:CCY rdfs:label "CCY" .
-aar:CVC aamas:lang aama:Aari .
-aar:CVC rdf:type aar:Rootclass .
-aar:CVC rdfs:label "CVC" .
-aar:Invar aamas:lang aama:Aari .
-aar:Invar rdf:type aar:Rootclass .
-aar:Invar rdfs:label "Invar" .
-
-#PCLASSES:
-
-aar:person aamas:pclass aamas:pngClass .
-aamas:pngClass rdfs:label "pngClass" .
-aar:number aamas:pclass aamas:pngClass .
-aamas:pngClass rdfs:label "pngClass" .
-aar:gender aamas:pclass aamas:pngClass .
-aamas:pngClass rdfs:label "pngClass" .
-aar:case aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-aar:defClass aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-aar:deixis aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-aar:derivedStem aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-aar:derivedStemAug aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-aar:participle aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-aar:polarity aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-aar:pos aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-aar:proClass aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-aar:tam aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-aar:conjClass aamas:pclass aamas:inflClass .
-aamas:inflClass rdfs:label "inflClass" .
-aar:pluralClass aamas:pclass aamas:inflClass .
-aamas:inflClass rdfs:label "inflClass" .
-aar:postpositionClass aamas:pclass aamas:inflClass .
-aamas:inflClass rdfs:label "inflClass" .
-aar:rootClass aamas:pclass aamas:inflClass .
-aamas:inflClass rdfs:label "inflClass" .
-
-#LEXEMES:
-
-##LexItems
-aama:Aari-token a aamas:Lexeme ;
-	aamas:lang aama:Aari ;
-	rdfs:label "token" ;
-	aar:conjClass aar:token ;
-	aar:derivedStem aar:token ;
-	aar:rootClass aar:token ;
-	aamas:lemma "" ;
-	aamas:gloss "" ;
+aar:lex-ba? a aamas:Lexeme ;
+	aamas:lang aama:aari ;
+	rdfs:label "ba?" ;
+	aamas:lemma "ba?" ; 
+	aamas:gloss "bring" ; 
 	.
 
-#TERMCLUSTER:  Finite_Verb_Paradigms_to_be_added
+#TERMCLUSTERS: Aari
 
-aar:Finite_Verb_Paradigms_to_be_added a aamas:Termcluster ;
-	rdfs:label "Finite_Verb_Paradigms_to_be_added" ;
+#TERMCLUSTER: aar-Pronoun
+
+aar:aar-Pronoun a aamas:Termcluster ;
+	rdfs:label "aar-Pronoun" ;
 	aamas:lang aama:Aari ;
-	rdfs:comment "HAAp." 
+	rdfs:comment "HA2.2.1" 
 	.
 
-aama:ID68dd7b75-c1e8-408d-a7a5-c8e9ca1115a8 a aamas:Term ;
+aama:ID7c0a8d22-27a4-4c73-953c-43b9107d8734 a aamas:Term ;
 	aamas:lang aama:Aari ;
-	aamas:memberOf aar:Finite_Verb_Paradigms_to_be_added ;
-	aar:vmorphClass aar:FiniteToBeAdded ;
-	aar:pos aar:Verb ;
-	aar:person aar:To_be_added ;
-	aar:tam aar:To_be_added ;
-	aar:token "not attested" ;
-	.
-
-#TERMCLUSTER:  Pronominal_Paradigms_to_be_added
-
-aar:Pronominal_Paradigms_to_be_added a aamas:Termcluster ;
-	rdfs:label "Pronominal_Paradigms_to_be_added" ;
-	aamas:lang aama:Aari ;
-	rdfs:comment "HAAp." 
-	.
-
-aama:IDb92a9b58-2521-4250-81b0-edecb6b1a8d7 a aamas:Term ;
-	aamas:lang aama:Aari ;
-	aamas:memberOf aar:Pronominal_Paradigms_to_be_added ;
+	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
-	aar:pmorphClass aar:ProMorph ;
-	aar:proClass aar:To_be_added ;
-	aar:token "not attested" ;
+	aar:proClass aar:Nominative-red ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:gender aar:Common ;
+	aar:token "?í" ;
 	.
+
+aama:IDf0cda2b1-6a90-4adb-9a6d-ce2fab397579 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Nominative-red ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:gender aar:Common ;
+	aar:token "áah" ;
+	.
+
+aama:ID95b00992-b704-44bf-9527-75272ec8da00 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Nominative-red ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:gender aar:Masc ;
+	aar:token "kí" ;
+	.
+
+aama:ID485d0d00-8b4d-4317-86f9-d5ef5af3b150 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Nominative-red ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:gender aar:Fem ;
+	aar:token "kó" ;
+	.
+
+aama:IDb81f272d-64f8-4a38-8ef0-85acc1b2412c a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Nominative-red ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:gender aar:Common ;
+	aar:token "wó(o)h" ;
+	.
+
+aama:ID69932ec7-23ea-4198-9b3c-9c7c5d068997 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Nominative-red ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:gender aar:Common ;
+	aar:token "yé" ;
+	.
+
+aama:IDfa9340ac-3ae1-44ee-9c7b-b3ce39124d49 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Nominative-red ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:gender aar:Common ;
+	aar:token "ké" ;
+	.
+
+#TERMCLUSTER: aar-Pronoun
+
+aar:aar-Pronoun a aamas:Termcluster ;
+	rdfs:label "aar-Pronoun" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.2.1" 
+	.
+
+aama:ID74343e50-f9e4-4bca-ba0a-041442c98553 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Object ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:gender aar:Common ;
+	aar:token "?ím" ;
+	.
+
+aama:ID6125983f-1530-471d-bf0f-283762181588 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Object ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:gender aar:Common ;
+	aar:token "áahm" ;
+	.
+
+aama:ID4cc9bee4-ff1b-4fda-be35-a691fa37fab8 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Object ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:gender aar:Masc ;
+	aar:token "kím" ;
+	.
+
+aama:IDad9b8070-3c9e-494f-aa66-17304716c516 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Object ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:gender aar:Fem ;
+	aar:token "kó(o)hm" ;
+	.
+
+aama:ID82daa691-df42-4dec-a702-157d21c2596f a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Object ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:gender aar:Common ;
+	aar:token "wó(o)hm" ;
+	.
+
+aama:IDc4afb000-6689-4df1-8149-a381470e9549 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Object ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:gender aar:Common ;
+	aar:token "yé(e)hm" ;
+	.
+
+aama:ID30b0d4fb-f69d-4c71-8cc9-d8c42d39daa4 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Object ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:gender aar:Common ;
+	aar:token "kém" ;
+	.
+
+#TERMCLUSTER: aar-Pronoun
+
+aar:aar-Pronoun a aamas:Termcluster ;
+	rdfs:label "aar-Pronoun" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.2.1" 
+	.
+
+aama:ID9b383b87-8667-4e30-ad78-1eeb6fdc0a96 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Subject ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:gender aar:Common ;
+	aar:token "?itá" ;
+	.
+
+aama:IDfeb1eb6e-c834-4ab9-a1c3-a26d479e0b16 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Subject ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:gender aar:Common ;
+	aar:token "áahná" ;
+	.
+
+aama:ID16211c1d-f396-4ad7-b548-c13fabdbbf5e a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Subject ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:gender aar:Masc ;
+	aar:token "nó(o)h" ;
+	.
+
+aama:ID28b07b65-7bc8-41dd-a24e-a82ebac17ff7 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Subject ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:gender aar:Fem ;
+	aar:token "náah" ;
+	.
+
+aama:IDcc78b15e-70b7-44e5-b9c6-57f1644b3cfd a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Subject ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:gender aar:Common ;
+	aar:token "wo(o)htá" ;
+	.
+
+aama:ID71f38988-25db-4e1f-bfdf-e83028a2d409 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Subject ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:gender aar:Common ;
+	aar:token "yetá" ;
+	.
+
+aama:IDd7b334de-e59e-45bd-be61-4020365accaa a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Subject ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:gender aar:Common ;
+	aar:token "ketá" ;
+	.
+
+#TERMCLUSTER: aar-Pronoun
+
+aar:aar-Pronoun a aamas:Termcluster ;
+	rdfs:label "aar-Pronoun" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.2.1" 
+	.
+
+aama:ID928d2726-1007-47f1-8e10-86698e4eb285 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Reflexive ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:gender aar:Common ;
+	aar:token "?ímatam" ;
+	.
+
+aama:IDd0c67f2e-25c6-4985-927d-0198a23375db a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Reflexive ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:gender aar:Common ;
+	aar:token "áahmatam" ;
+	.
+
+aama:IDf0f8e3b0-181e-41ee-a5bb-9da784988412 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Reflexive ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:gender aar:Masc ;
+	aar:token "kímatam ~ yíhmatam" ;
+	.
+
+aama:ID8ed3d3b4-ead0-48a2-9e83-2d4a5c26b87f a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Reflexive ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:gender aar:Fem ;
+	aar:token "kómatam ~ yíhmatam" ;
+	.
+
+aama:ID3af20658-6f87-4c25-9748-b182bbd9e733 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Reflexive ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:gender aar:Common ;
+	aar:token "wó(o)hmatam" ;
+	.
+
+aama:ID5cdee3fc-4e64-4781-bc3d-60df29b74a10 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Reflexive ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:gender aar:Common ;
+	aar:token "yé(e)hmatam" ;
+	.
+
+aama:ID0f7c7175-6c57-4bb6-a6fa-8f6a7c9a489f a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Reflexive ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:gender aar:Common ;
+	aar:token "kématam" ;
+	.
+
+#TERMCLUSTER: aar-Pronoun
+
+aar:aar-Pronoun a aamas:Termcluster ;
+	rdfs:label "aar-Pronoun" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.2.1" 
+	.
+
+aama:ID6e514b9a-8dc9-4cae-bd4c-d45a18c8caf7 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Possessive ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:gender aar:Common ;
+	aar:token "?istén" ;
+	.
+
+aama:IDcf2ca185-3623-44f1-9d35-26376de682f8 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Possessive ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:gender aar:Common ;
+	aar:token "aahntén" ;
+	.
+
+aama:ID1ffb35c5-47bd-4c63-adaf-b7705c8dcfd7 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Possessive ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:gender aar:Masc ;
+	aar:token "kittén" ;
+	.
+
+aama:ID03f3e822-2ee4-4ea7-a155-70d22f5f1c1d a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Possessive ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:gender aar:Fem ;
+	aar:token "kó(o)httén" ;
+	.
+
+aama:ID14738c18-8e0e-4c19-b358-c33601344ebe a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Possessive ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:gender aar:Common ;
+	aar:token "wo(o)hntén" ;
+	.
+
+aama:ID6639b5ce-dd02-4003-a7f8-ce9b6a7b0c6e a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Possessive ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:gender aar:Common ;
+	aar:token "yentén" ;
+	.
+
+aama:IDdc90ef0c-f0b5-433f-936f-5a5cbc5177e6 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Pronoun ;
+	aar:pos aar:Pronoun ;
+	aar:proClass aar:Possessive ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:gender aar:Common ;
+	aar:token "kentén" ;
+	.
+
+#TERMCLUSTER: aar-Verb-ba?-FutureAffirmative
+
+aar:aar-Verb-ba?-FutureAffirmative a aamas:Termcluster ;
+	rdfs:label "aar-Verb-ba?-FutureAffirmative" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.7.2.2p." 
+	.
+
+aama:ID753fd230-9f3a-4b96-b16e-5688cb8a3cbd a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-FutureAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Future ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:token "bá?ter" ;
+	.
+
+aama:IDade936ba-208a-4fbe-83af-ed311d4f5d48 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-FutureAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Future ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:token " bá?tay" ;
+	.
+
+aama:IDcb39426a-5226-47a5-b575-e7c2a05b3cf6 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-FutureAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Future ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:token "bá?ter" ;
+	.
+
+aama:ID66a2ac57-2bee-4310-ad66-67990b3da405 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-FutureAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Future ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:token "bá?sto(o)ht" ;
+	.
+
+aama:ID936fb132-bdab-4419-a839-360c5bc6d40f a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-FutureAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Future ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:token "bá?ster" ;
+	.
+
+aama:ID6a950962-ee76-4804-9de4-1af46cce6463 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-FutureAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Future ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:token "bá?ster" ;
+	.
+
+#TERMCLUSTER: aar-Verb-ba?-ImperativeAffirmative
+
+aar:aar-Verb-ba?-ImperativeAffirmative a aamas:Termcluster ;
+	rdfs:label "aar-Verb-ba?-ImperativeAffirmative" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.7.2.2p." 
+	.
+
+aama:IDeeed23c7-caca-4af3-b9a3-4de349e06b64 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperativeAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Imperative ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:token " báka" ;
+	.
+
+aama:ID195d9ebe-a7c9-4277-a8ed-459731d4ceaf a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperativeAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Imperative ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:token "báket" ;
+	.
+
+#TERMCLUSTER: aar-Verb-ba?-ImperativeNegative
+
+aar:aar-Verb-ba?-ImperativeNegative a aamas:Termcluster ;
+	rdfs:label "aar-Verb-ba?-ImperativeNegative" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.7.2.2p." 
+	.
+
+aama:IDbf08fd68-376e-4e49-a5bf-24e207d916e1 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperativeNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:Imperative ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:token " áahy ba?ka" ;
+	.
+
+aama:ID25e7eab4-86fa-4b68-9c97-84d99bac4493 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperativeNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:Imperative ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:token "áahy ba?ket" ;
+	.
+
+#TERMCLUSTER: aar-Verb-ba?-ImperfactNegative
+
+aar:aar-Verb-ba?-ImperfactNegative a aamas:Termcluster ;
+	rdfs:label "aar-Verb-ba?-ImperfactNegative" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.7.2.2p." 
+	.
+
+aama:IDa283cb57-d9d4-4502-9178-8a4fb6485ad5 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfactNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:Imperfact ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:token "ba?áyit " ;
+	.
+
+aama:ID0b44f6f3-46ba-4b8a-ae86-190c0b5c15f6 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfactNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:Imperfact ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:token " ba?áyay" ;
+	.
+
+aama:ID4383dbf9-fac2-49e5-8712-58f18e4ca2a7 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfactNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:Imperfact ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:token "ba?áy" ;
+	.
+
+aama:IDfa199762-880f-4467-b9cd-3a48ee486a33 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfactNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:Imperfact ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:token "ba?áyo(o)ht" ;
+	.
+
+aama:ID463a621f-9d1e-4518-933f-ec818ab6ed1c a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfactNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:Imperfact ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:token "ba?áyet" ;
+	.
+
+aama:IDebfafb40-191d-46da-8725-9887166af21c a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfactNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:Imperfact ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:token "ba?áyek" ;
+	.
+
+#TERMCLUSTER: aar-Verb-ba?-ImperfectAffirmative
+
+aar:aar-Verb-ba?-ImperfectAffirmative a aamas:Termcluster ;
+	rdfs:label "aar-Verb-ba?-ImperfectAffirmative" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.7.2.2p." 
+	.
+
+aama:ID76e631eb-33ba-4a22-b6a5-0260e680a051 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Imperfect ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:token "bá?ba?dit  ~  bába?dit" ;
+	.
+
+aama:ID7e66f381-7890-48f7-bac3-bd3212e68d4c a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Imperfect ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:token " bá?ba?day  ~  bába?day" ;
+	.
+
+aama:IDaeb1ec84-a241-463c-92b3-d8f5cef310cb a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Imperfect ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:token "bá?ba?da  ~  bába?da" ;
+	.
+
+aama:IDd1fb9489-c265-485f-a345-a88ba63de3fc a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Imperfect ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:token "bá?ba?do(o)ht  ~  bába?do(o)ht" ;
+	.
+
+aama:ID81074a85-2259-4755-a9ec-5e7213f75185 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Imperfect ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:token "bá?ba?det  ~  bába?det" ;
+	.
+
+aama:ID75ba26af-a63b-4e6b-aea3-6cbc1ee9af05 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Imperfect ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:token "bá?ba?dek  ~  bába?dek" ;
+	.
+
+#TERMCLUSTER: aar-Verb-ba?-ImperfectPastAffirmative
+
+aar:aar-Verb-ba?-ImperfectPastAffirmative a aamas:Termcluster ;
+	rdfs:label "aar-Verb-ba?-ImperfectPastAffirmative" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.7.2.2p." 
+	.
+
+aama:IDe1681166-8628-4cd5-92d7-e336d5b03931 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectPastAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:ImperfectPast ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:token "bába?dit-aahq(e)  ~  bába?d- aahqit(e)" ;
+	.
+
+aama:IDc1065e61-b63e-4e14-bbb8-0602cfa84e73 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectPastAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:ImperfectPast ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:token " bába?day-aahq(e)  ~  bába?d- aahqay" ;
+	.
+
+aama:IDd1fde8f1-7c59-44e2-9a54-cb501c6e85f2 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectPastAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:ImperfectPast ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:token "bába?d-aahq(e)" ;
+	.
+
+aama:ID79629656-d0d2-4213-8973-00092dcb6314 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectPastAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:ImperfectPast ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:token "bába?do(o)ht-aahq(e)  ~  bába?d- aahq o(o)ht(e) " ;
+	.
+
+aama:ID164a60bf-f91a-43b8-9cea-dcae35c5f276 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectPastAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:ImperfectPast ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:token "bába?det-aahq(e)  ~  bába?d- aahqet(e) " ;
+	.
+
+aama:ID3e05ff46-e164-4f4a-b2b3-8ed9b12642b2 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectPastAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:ImperfectPast ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:token "bába?dek-aahq(e)  ~  bába?d- aahqek(e)" ;
+	.
+
+#TERMCLUSTER: aar-Verb-ba?-ImperfectPastNegative
+
+aar:aar-Verb-ba?-ImperfectPastNegative a aamas:Termcluster ;
+	rdfs:label "aar-Verb-ba?-ImperfectPastNegative" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.7.2.2p." 
+	.
+
+aama:IDf5cfcb80-9c7c-4813-a137-e293a3b16132 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectPastNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:ImperfectPast ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:token "ba?áyit-aahq(e)" ;
+	.
+
+aama:IDb31a560d-9080-4362-8262-836c39c94cbc a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectPastNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:ImperfectPast ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:token " ba?áyay-aahq(e)" ;
+	.
+
+aama:IDb046f221-f698-4ac3-9f51-20d0c9f12863 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectPastNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:ImperfectPast ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:token "ba?áy-aahq(e)" ;
+	.
+
+aama:ID90adb64e-c513-4b54-89c8-45cc8168a334 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectPastNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:ImperfectPast ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:token "ba?áyo(o)ht-aahq(e)" ;
+	.
+
+aama:ID17cc6578-8f31-4cd9-8c2e-7e2681624ce5 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectPastNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:ImperfectPast ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:token "ba?áyet-aahq(e)" ;
+	.
+
+aama:ID29b97aff-9fa1-492c-a31e-f1546e30b019 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-ImperfectPastNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:ImperfectPast ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:token "ba?áyek-aahq(e)" ;
+	.
+
+#TERMCLUSTER: aar-Verb-ba?-JussiveAffirmative
+
+aar:aar-Verb-ba?-JussiveAffirmative a aamas:Termcluster ;
+	rdfs:label "aar-Verb-ba?-JussiveAffirmative" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.7.2.2p." 
+	.
+
+aama:ID295a0e75-0f02-46b9-932a-6c54fab0dde6 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-JussiveAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Jussive ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:token "ba? ?í ba?en  ~ ?I bá?en" ;
+	.
+
+aama:ID15105745-c51f-4238-891e-d47506ec5d4e a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-JussiveAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Jussive ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:token "ba? kí ba?en  ~ ki bá?en" ;
+	.
+
+aama:ID026c9c1d-c8c4-411f-a68d-4342801156fb a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-JussiveAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Jussive ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:token "ba? wó(o)h ba?en  ~ wo(o)h bá?en" ;
+	.
+
+aama:ID2cf9a04a-6c0c-4926-8a5d-441765966e05 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-JussiveAffirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Jussive ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:token "ba? ké ba?en  ~ ke bá?en" ;
+	.
+
+#TERMCLUSTER: aar-Verb-ba?-JussivekkkNegative
+
+aar:aar-Verb-ba?-JussivekkkNegative a aamas:Termcluster ;
+	rdfs:label "aar-Verb-ba?-JussivekkkNegative" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.7.2.2p." 
+	.
+
+aama:ID304436b4-63fb-40c5-8e2a-850dbe669479 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-JussivekkkNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:kkkNegative ;
+	aar:tam aar:Jussive ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:token "áahy ?í bá?baaka" ;
+	.
+
+aama:ID777be17b-333e-4ff7-b23c-9ca87159376e a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-JussivekkkNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:kkkNegative ;
+	aar:tam aar:Jussive ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:token "áahy  ba?en" ;
+	.
+
+aama:ID96635fa9-e43d-4893-8ae4-2fe872cfd923 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-JussivekkkNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:kkkNegative ;
+	aar:tam aar:Jussive ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:token "áahy wó(o)h bá?baaka" ;
+	.
+
+aama:ID8c57d733-2bf7-4a7b-b647-cd4aabe00ace a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-JussivekkkNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:kkkNegative ;
+	aar:tam aar:Jussive ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:token "áahy ke bá?en" ;
+	.
+
+#TERMCLUSTER: aar-Verb-ba?-Perfect1Affirmative
+
+aar:aar-Verb-ba?-Perfect1Affirmative a aamas:Termcluster ;
+	rdfs:label "aar-Verb-ba?-Perfect1Affirmative" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.7.2.2p." 
+	.
+
+aama:ID40543c97-80ec-4a27-b9bd-f94bb96c4e28 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-Perfect1Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Perfect1 ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:token "bá?seqit(e)  ~  básit(e)" ;
+	.
+
+aama:IDdf8675d8-844a-4cb8-a00b-f0279a2e7fae a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-Perfect1Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Perfect1 ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:token "bá?seqay  ~  básay" ;
+	.
+
+aama:IDd645f831-191d-40ae-a5a9-5ea502478121 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-Perfect1Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Perfect1 ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:token "bá?seqe  ~  báse" ;
+	.
+
+aama:ID6da2a89b-151f-4679-8366-bd2e8ee3a10a a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-Perfect1Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Perfect1 ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:token "bá?seqo(o)ht(e)  ~  báso(o)ht(e)" ;
+	.
+
+aama:ID79f9ba91-f7dd-4bc0-bfe3-fa514434db93 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-Perfect1Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Perfect1 ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:token "bá?seqat(e)  ~  báset(e)" ;
+	.
+
+aama:ID0ff7f6b6-235a-4cf1-af6d-0ca147c7e9e5 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-Perfect1Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Perfect1 ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:token "bá?seqak(e)  ~  básek(e)" ;
+	.
+
+#TERMCLUSTER: aar-Verb-ba?-Perfect2Affirmative
+
+aar:aar-Verb-ba?-Perfect2Affirmative a aamas:Termcluster ;
+	rdfs:label "aar-Verb-ba?-Perfect2Affirmative" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.7.2.2p." 
+	.
+
+aama:IDd88b4c9f-e2e5-4796-855e-cc07a0a06e98 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-Perfect2Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Perfect2 ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:token "bá?tit" ;
+	.
+
+aama:ID8eee984b-9a0f-4154-baa3-25aa35a6e726 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-Perfect2Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Perfect2 ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:token " bá?tay" ;
+	.
+
+aama:IDa4d20ae0-61c5-4c93-a217-c1539307cbc1 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-Perfect2Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Perfect2 ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:token "bá?ta" ;
+	.
+
+aama:IDa3fe6089-50fe-4902-a0b8-2e2a7fb6a670 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-Perfect2Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Perfect2 ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:token "bá?to(o)ht(e)" ;
+	.
+
+aama:ID1467861f-ae43-433c-b42c-6371d46710b1 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-Perfect2Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Perfect2 ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:token "bá?tet" ;
+	.
+
+aama:ID2188e81e-3d03-45c6-b5af-aafde8ab3685 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-Perfect2Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:Perfect2 ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:token "bá?tek" ;
+	.
+
+#TERMCLUSTER: aar-Verb-ba?-PerfectNegative
+
+aar:aar-Verb-ba?-PerfectNegative a aamas:Termcluster ;
+	rdfs:label "aar-Verb-ba?-PerfectNegative" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.7.2.2p." 
+	.
+
+aama:ID2b5bc3df-c82c-45d0-a82f-0b8c0dbb985c a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:Perfect ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:token "ba?kït(e)" ;
+	.
+
+aama:ID8ebef667-1d3c-4ca3-8136-ff148856590f a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:Perfect ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:token " ba?káy" ;
+	.
+
+aama:ID4a666fb3-de2a-4ab3-8ab0-7333b4638887 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:Perfect ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:token "ba?kï" ;
+	.
+
+aama:ID4e4169ff-f541-4451-b3f8-4de428fee91c a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:Perfect ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:token "ba?ko(o)ht(e)" ;
+	.
+
+aama:IDe00eb4dc-0d83-492d-ba48-9c93f461bbce a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:Perfect ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:token "ba?klêt(e)" ;
+	.
+
+aama:IDced7aa36-a163-4e54-bf79-6ce667a0a948 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:Perfect ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:token "ba?kêk(e)" ;
+	.
+
+#TERMCLUSTER: aar-Verb-ba?-PerfectPast1Affirmative
+
+aar:aar-Verb-ba?-PerfectPast1Affirmative a aamas:Termcluster ;
+	rdfs:label "aar-Verb-ba?-PerfectPast1Affirmative" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.7.2.2p." 
+	.
+
+aama:IDf308e7ff-d47a-4dcc-9bee-6b87046e5e78 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPast1Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:PerfectPast1 ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:token "bá?seqit-aahq(e)" ;
+	.
+
+aama:ID1f32fd06-47d6-4ac4-aa94-26f130814a22 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPast1Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:PerfectPast1 ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:token " bá?seqay-aahq(e)" ;
+	.
+
+aama:IDf0a26ef6-113e-4dec-943c-6f2f04f75ac3 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPast1Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:PerfectPast1 ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:token "bá?seqey-aahq(e) ~ bá?sey -aahq(e)" ;
+	.
+
+aama:ID73c2a0f1-a03c-4e1e-b1cb-fd26d9eba606 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPast1Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:PerfectPast1 ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:token "bá?seqo(o)ht-aahq(e)" ;
+	.
+
+aama:ID746ef5c4-1847-4fc9-acd2-34552414b3eb a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPast1Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:PerfectPast1 ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:token "bá?seqet-aahq(e)" ;
+	.
+
+aama:ID35d163f9-ae3d-49a6-b127-b5a322a0c1cc a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPast1Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:PerfectPast1 ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:token "bá?seqek-aahq(e)" ;
+	.
+
+#TERMCLUSTER: aar-Verb-ba?-PerfectPast2Affirmative
+
+aar:aar-Verb-ba?-PerfectPast2Affirmative a aamas:Termcluster ;
+	rdfs:label "aar-Verb-ba?-PerfectPast2Affirmative" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.7.2.2p." 
+	.
+
+aama:IDc7773e65-5584-47f1-8fec-2fb7f561acd5 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPast2Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:PerfectPast2 ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:token "ba?tít-aahq(e)" ;
+	.
+
+aama:ID14e210a0-4c39-4a3d-b31a-3e7bb63eee53 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPast2Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:PerfectPast2 ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:token " ba?táy-aahq(e)" ;
+	.
+
+aama:IDa0db1532-5f6a-46c6-a819-e0ef9b98f5e4 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPast2Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:PerfectPast2 ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:token "ba?t-aahq(e)" ;
+	.
+
+aama:ID78d48aaa-0e0c-4c16-ab22-caa0607f0817 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPast2Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:PerfectPast2 ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:token "ba?to(o)ht-aahq(e)" ;
+	.
+
+aama:ID59992305-bbfe-41fa-be2e-1a38217e3d2d a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPast2Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:PerfectPast2 ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:token "ba?tét-aahq(e)" ;
+	.
+
+aama:IDd2baa9e3-d70e-4c56-8c25-294807c6aba2 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPast2Affirmative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Affirmative ;
+	aar:tam aar:PerfectPast2 ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:token "ba?ték-aahq(e)" ;
+	.
+
+#TERMCLUSTER: aar-Verb-ba?-PerfectPastNegative
+
+aar:aar-Verb-ba?-PerfectPastNegative a aamas:Termcluster ;
+	rdfs:label "aar-Verb-ba?-PerfectPastNegative" ;
+	aamas:lang aama:Aari ;
+	rdfs:comment "HA2.7.2.2p." 
+	.
+
+aama:ID5da5f96f-cae5-4b5a-a638-e34199af56ca a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPastNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:PerfectPast ;
+	aar:number aar:Singular ;
+	aar:person aar:Person1 ;
+	aar:token "ba?kít-aahq(e)" ;
+	.
+
+aama:IDddc9f57f-1895-415d-870a-b9d4b82fd8b9 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPastNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:PerfectPast ;
+	aar:number aar:Singular ;
+	aar:person aar:Person2 ;
+	aar:token " ba?káy-aahq(e)" ;
+	.
+
+aama:IDdc7e93f6-ae25-4a93-b6a6-841fb7e9beb7 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPastNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:PerfectPast ;
+	aar:number aar:Singular ;
+	aar:person aar:Person3 ;
+	aar:token "ba?kí-aahq(e)" ;
+	.
+
+aama:ID289cc5cf-5f33-4696-a462-baa52ccc886c a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPastNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:PerfectPast ;
+	aar:number aar:Plural ;
+	aar:person aar:Person1 ;
+	aar:token "ba?ko(o)ht-aahq(e)" ;
+	.
+
+aama:ID9205b7d7-f99f-4d3e-a6ee-345f352e8b80 a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPastNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:PerfectPast ;
+	aar:number aar:Plural ;
+	aar:person aar:Person2 ;
+	aar:token "ba?két-aahq(e)" ;
+	.
+
+aama:IDfd04f8e1-579f-4c4a-b47a-bf9efe3f10be a aamas:Term ;
+	aamas:lang aama:Aari ;
+	aamas:memberOf aar:aar-Verb-ba?-PerfectPastNegative ;
+	aamas:lexeme aar:lex-ba? ;
+	aar:pos aar:Verb ;
+	aar:polarity aar:Negative ;
+	aar:tam aar:PerfectPast ;
+	aar:number aar:Plural ;
+	aar:person aar:Person3 ;
+	aar:token "ba?kék-aahq(e)" ;
+	.
+

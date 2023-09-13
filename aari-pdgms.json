@@ -1,0 +1,430 @@
+
+{
+  "lang": "aari",
+  "subfamily": "Omotic South",
+  "lgpref": "aar",
+  "datasource": "Hayward, Richard. 1990. 'Notes on the Aari Language' In Richard Hayward (Ed.), Omotic Language Studies, pp. 425-493; Røsok, Marie Iversdatter. 2016. 'The Sound Pattern of Aari'. MA Thesis in Linguistics. Department of Linguistics and Scandinavian Studies. University of Oslo. [HAp.;Rp.]",
+  "datasourceNotes": "",
+  "geodemoURL": "http://www.ethnologue.com/language/aiw",
+  "geodemoTXT": "Speakers: 298,300, all users. L1 users: 285,000 (2010 UNSD). L2 users: 13,300. 129,000 monolinguals. Location: SW Ethiopia, Southern Nations, Nationalities, and Peoples’ region: central north Omo zone, south tip of Ethiopia plateau.",
+  "schemata": {
+  "gender": [
+    "Common",
+    "Fem",
+    "Masc"
+  ],
+  "lexeme": [
+    "ba?"
+  ],
+  "number": [
+    "Plural",
+    "Singular"
+  ],
+  "person": [
+    "Person1",
+    "Person2",
+    "Person3"
+  ],
+  "polarity": [
+    "Affirmative",
+    "Negative",
+    "kkkNegative"
+  ],
+  "pos": [
+    "Pronoun",
+    "Verb"
+  ],
+  "proClass": [
+    "Nominative-red",
+    "Object",
+    "Possessive",
+    "Reflexive",
+    "Subject"
+  ],
+  "tam": [
+    "Future",
+    "Imperative",
+    "Imperfact",
+    "Imperfect",
+    "ImperfectPast",
+    "Jussive",
+    "Perfect",
+    "Perfect1",
+    "Perfect2",
+    "PerfectPast",
+    "PerfectPast1",
+    "PerfectPast2"
+  ]
+},
+  "lexemes": {
+  "ba?": {
+    "lemma": "ba?",
+    "gloss": "bring"
+  }
+},
+  "pdgmPropOrder": ["pos", "proclass", "lexeme", "tam", "polarity"],
+"termclusters": [
+  {
+    "label": "aar-Pronoun",
+    "note": "HA2.2.1",
+    "common": {
+      "pos": "Pronoun",
+      "proClass": "Nominative-red"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"?í"],
+      ["Singular" ,"Person2" ,"Common" ,"áah"],
+      ["Singular" ,"Person3" ,"Masc" ,"kí"],
+      ["Singular" ,"Person3" ,"Fem" ,"kó"],
+      ["Plural" ,"Person1" ,"Common" ,"wó(o)h"],
+      ["Plural" ,"Person2" ,"Common" ,"yé"],
+      ["Plural" ,"Person3" ,"Common" ,"ké"]
+    ]
+  },
+  {
+    "label": "aar-Pronoun",
+    "note": "HA2.2.1",
+    "common": {
+      "pos": "Pronoun",
+      "proClass": "Object"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"?ím"],
+      ["Singular" ,"Person2" ,"Common" ,"áahm"],
+      ["Singular" ,"Person3" ,"Masc" ,"kím"],
+      ["Singular" ,"Person3" ,"Fem" ,"kó(o)hm"],
+      ["Plural" ,"Person1" ,"Common" ,"wó(o)hm"],
+      ["Plural" ,"Person2" ,"Common" ,"yé(e)hm"],
+      ["Plural" ,"Person3" ,"Common" ,"kém"]
+    ]
+  },
+  {
+    "label": "aar-Pronoun",
+    "note": "HA2.2.1",
+    "common": {
+      "pos": "Pronoun",
+      "proClass": "Subject"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"?itá"],
+      ["Singular" ,"Person2" ,"Common" ,"áahná"],
+      ["Singular" ,"Person3" ,"Masc" ,"nó(o)h"],
+      ["Singular" ,"Person3" ,"Fem" ,"náah"],
+      ["Plural" ,"Person1" ,"Common" ,"wo(o)htá"],
+      ["Plural" ,"Person2" ,"Common" ,"yetá"],
+      ["Plural" ,"Person3" ,"Common" ,"ketá"]
+    ]
+  },
+  {
+    "label": "aar-Pronoun",
+    "note": "HA2.2.1",
+    "common": {
+      "pos": "Pronoun",
+      "proClass": "Reflexive"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"?ímatam"],
+      ["Singular" ,"Person2" ,"Common" ,"áahmatam"],
+      ["Singular" ,"Person3" ,"Masc" ,"kímatam ~ yíhmatam"],
+      ["Singular" ,"Person3" ,"Fem" ,"kómatam ~ yíhmatam"],
+      ["Plural" ,"Person1" ,"Common" ,"wó(o)hmatam"],
+      ["Plural" ,"Person2" ,"Common" ,"yé(e)hmatam"],
+      ["Plural" ,"Person3" ,"Common" ,"kématam"]
+    ]
+  },
+  {
+    "label": "aar-Pronoun",
+    "note": "HA2.2.1",
+    "common": {
+      "pos": "Pronoun",
+      "proClass": "Possessive"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"?istén"],
+      ["Singular" ,"Person2" ,"Common" ,"aahntén"],
+      ["Singular" ,"Person3" ,"Masc" ,"kittén"],
+      ["Singular" ,"Person3" ,"Fem" ,"kó(o)httén"],
+      ["Plural" ,"Person1" ,"Common" ,"wo(o)hntén"],
+      ["Plural" ,"Person2" ,"Common" ,"yentén"],
+      ["Plural" ,"Person3" ,"Common" ,"kentén"]
+    ]
+  },
+  {
+    "label": "aar-Verb-ba?-FutureAffirmative",
+    "note": "HA2.7.2.2p.",
+    "common": {
+      "lexeme": "ba?",
+      "pos": "Verb",
+      "polarity": "Affirmative",
+      "tam": "Future"
+    },
+    "terms": [
+      ["number" ,"person" ,"token"],
+      ["Singular" ,"Person1" ,"bá?ter"],
+      ["Singular" ,"Person2" ," bá?tay"],
+      ["Singular" ,"Person3" ,"bá?ter"],
+      ["Plural" ,"Person1" ,"bá?sto(o)ht"],
+      ["Plural" ,"Person2" ,"bá?ster"],
+      ["Plural" ,"Person3" ,"bá?ster"]
+    ]
+  },
+  {
+    "label": "aar-Verb-ba?-ImperativeAffirmative",
+    "note": "HA2.7.2.2p.",
+    "common": {
+      "lexeme": "ba?",
+      "pos": "Verb",
+      "polarity": "Affirmative",
+      "tam": "Imperative"
+    },
+    "terms": [
+      ["number" ,"person" ,"token"],
+      ["Singular" ,"Person2" ," báka"],
+      ["Plural" ,"Person2" ,"báket"]
+    ]
+  },
+  {
+    "label": "aar-Verb-ba?-ImperativeNegative",
+    "note": "HA2.7.2.2p.",
+    "common": {
+      "lexeme": "ba?",
+      "pos": "Verb",
+      "polarity": "Negative",
+      "tam": "Imperative"
+    },
+    "terms": [
+      ["number" ,"person" ,"token"],
+      ["Singular" ,"Person2" ," áahy ba?ka"],
+      ["Plural" ,"Person2" ,"áahy ba?ket"]
+    ]
+  },
+  {
+    "label": "aar-Verb-ba?-ImperfactNegative",
+    "note": "HA2.7.2.2p.",
+    "common": {
+      "lexeme": "ba?",
+      "pos": "Verb",
+      "polarity": "Negative",
+      "tam": "Imperfact"
+    },
+    "terms": [
+      ["number" ,"person" ,"token"],
+      ["Singular" ,"Person1" ,"ba?áyit "],
+      ["Singular" ,"Person2" ," ba?áyay"],
+      ["Singular" ,"Person3" ,"ba?áy"],
+      ["Plural" ,"Person1" ,"ba?áyo(o)ht"],
+      ["Plural" ,"Person2" ,"ba?áyet"],
+      ["Plural" ,"Person3" ,"ba?áyek"]
+    ]
+  },
+  {
+    "label": "aar-Verb-ba?-ImperfectAffirmative",
+    "note": "HA2.7.2.2p.",
+    "common": {
+      "lexeme": "ba?",
+      "pos": "Verb",
+      "polarity": "Affirmative",
+      "tam": "Imperfect"
+    },
+    "terms": [
+      ["number" ,"person" ,"token"],
+      ["Singular" ,"Person1" ,"bá?ba?dit  ~  bába?dit"],
+      ["Singular" ,"Person2" ," bá?ba?day  ~  bába?day"],
+      ["Singular" ,"Person3" ,"bá?ba?da  ~  bába?da"],
+      ["Plural" ,"Person1" ,"bá?ba?do(o)ht  ~  bába?do(o)ht"],
+      ["Plural" ,"Person2" ,"bá?ba?det  ~  bába?det"],
+      ["Plural" ,"Person3" ,"bá?ba?dek  ~  bába?dek"]
+    ]
+  },
+  {
+    "label": "aar-Verb-ba?-ImperfectPastAffirmative",
+    "note": "HA2.7.2.2p.",
+    "common": {
+      "lexeme": "ba?",
+      "pos": "Verb",
+      "polarity": "Affirmative",
+      "tam": "ImperfectPast"
+    },
+    "terms": [
+      ["number" ,"person" ,"token"],
+      ["Singular" ,"Person1" ,"bába?dit-aahq(e)  ~  bába?d- aahqit(e)"],
+      ["Singular" ,"Person2" ," bába?day-aahq(e)  ~  bába?d- aahqay"],
+      ["Singular" ,"Person3" ,"bába?d-aahq(e)"],
+      ["Plural" ,"Person1" ,"bába?do(o)ht-aahq(e)  ~  bába?d- aahq o(o)ht(e) "],
+      ["Plural" ,"Person2" ,"bába?det-aahq(e)  ~  bába?d- aahqet(e) "],
+      ["Plural" ,"Person3" ,"bába?dek-aahq(e)  ~  bába?d- aahqek(e)"]
+    ]
+  },
+  {
+    "label": "aar-Verb-ba?-ImperfectPastNegative",
+    "note": "HA2.7.2.2p.",
+    "common": {
+      "lexeme": "ba?",
+      "pos": "Verb",
+      "polarity": "Negative",
+      "tam": "ImperfectPast"
+    },
+    "terms": [
+      ["number" ,"person" ,"token"],
+      ["Singular" ,"Person1" ,"ba?áyit-aahq(e)"],
+      ["Singular" ,"Person2" ," ba?áyay-aahq(e)"],
+      ["Singular" ,"Person3" ,"ba?áy-aahq(e)"],
+      ["Plural" ,"Person1" ,"ba?áyo(o)ht-aahq(e)"],
+      ["Plural" ,"Person2" ,"ba?áyet-aahq(e)"],
+      ["Plural" ,"Person3" ,"ba?áyek-aahq(e)"]
+    ]
+  },
+  {
+    "label": "aar-Verb-ba?-JussiveAffirmative",
+    "note": "HA2.7.2.2p.",
+    "common": {
+      "lexeme": "ba?",
+      "pos": "Verb",
+      "polarity": "Affirmative",
+      "tam": "Jussive"
+    },
+    "terms": [
+      ["number" ,"person" ,"token"],
+      ["Singular" ,"Person1" ,"ba? ?í ba?en  ~ ?I bá?en"],
+      ["Singular" ,"Person3" ,"ba? kí ba?en  ~ ki bá?en"],
+      ["Plural" ,"Person1" ,"ba? wó(o)h ba?en  ~ wo(o)h bá?en"],
+      ["Plural" ,"Person3" ,"ba? ké ba?en  ~ ke bá?en"]
+    ]
+  },
+  {
+    "label": "aar-Verb-ba?-JussivekkkNegative",
+    "note": "HA2.7.2.2p.",
+    "common": {
+      "lexeme": "ba?",
+      "pos": "Verb",
+      "polarity": "kkkNegative",
+      "tam": "Jussive"
+    },
+    "terms": [
+      ["number" ,"person" ,"token"],
+      ["Singular" ,"Person1" ,"áahy ?í bá?baaka"],
+      ["Singular" ,"Person3" ,"áahy  ba?en"],
+      ["Plural" ,"Person1" ,"áahy wó(o)h bá?baaka"],
+      ["Plural" ,"Person3" ,"áahy ke bá?en"]
+    ]
+  },
+  {
+    "label": "aar-Verb-ba?-Perfect1Affirmative",
+    "note": "HA2.7.2.2p.",
+    "common": {
+      "lexeme": "ba?",
+      "pos": "Verb",
+      "polarity": "Affirmative",
+      "tam": "Perfect1"
+    },
+    "terms": [
+      ["number" ,"person" ,"token"],
+      ["Singular" ,"Person1" ,"bá?seqit(e)  ~  básit(e)"],
+      ["Singular" ,"Person2" ,"bá?seqay  ~  básay"],
+      ["Singular" ,"Person3" ,"bá?seqe  ~  báse"],
+      ["Plural" ,"Person1" ,"bá?seqo(o)ht(e)  ~  báso(o)ht(e)"],
+      ["Plural" ,"Person2" ,"bá?seqat(e)  ~  báset(e)"],
+      ["Plural" ,"Person3" ,"bá?seqak(e)  ~  básek(e)"]
+    ]
+  },
+  {
+    "label": "aar-Verb-ba?-Perfect2Affirmative",
+    "note": "HA2.7.2.2p.",
+    "common": {
+      "lexeme": "ba?",
+      "pos": "Verb",
+      "polarity": "Affirmative",
+      "tam": "Perfect2"
+    },
+    "terms": [
+      ["number" ,"person" ,"token"],
+      ["Singular" ,"Person1" ,"bá?tit"],
+      ["Singular" ,"Person2" ," bá?tay"],
+      ["Singular" ,"Person3" ,"bá?ta"],
+      ["Plural" ,"Person1" ,"bá?to(o)ht(e)"],
+      ["Plural" ,"Person2" ,"bá?tet"],
+      ["Plural" ,"Person3" ,"bá?tek"]
+    ]
+  },
+  {
+    "label": "aar-Verb-ba?-PerfectNegative",
+    "note": "HA2.7.2.2p.",
+    "common": {
+      "lexeme": "ba?",
+      "pos": "Verb",
+      "polarity": "Negative",
+      "tam": "Perfect"
+    },
+    "terms": [
+      ["number" ,"person" ,"token"],
+      ["Singular" ,"Person1" ,"ba?kït(e)"],
+      ["Singular" ,"Person2" ," ba?káy"],
+      ["Singular" ,"Person3" ,"ba?kï"],
+      ["Plural" ,"Person1" ,"ba?ko(o)ht(e)"],
+      ["Plural" ,"Person2" ,"ba?klêt(e)"],
+      ["Plural" ,"Person3" ,"ba?kêk(e)"]
+    ]
+  },
+  {
+    "label": "aar-Verb-ba?-PerfectPast1Affirmative",
+    "note": "HA2.7.2.2p.",
+    "common": {
+      "lexeme": "ba?",
+      "pos": "Verb",
+      "polarity": "Affirmative",
+      "tam": "PerfectPast1"
+    },
+    "terms": [
+      ["number" ,"person" ,"token"],
+      ["Singular" ,"Person1" ,"bá?seqit-aahq(e)"],
+      ["Singular" ,"Person2" ," bá?seqay-aahq(e)"],
+      ["Singular" ,"Person3" ,"bá?seqey-aahq(e) ~ bá?sey -aahq(e)"],
+      ["Plural" ,"Person1" ,"bá?seqo(o)ht-aahq(e)"],
+      ["Plural" ,"Person2" ,"bá?seqet-aahq(e)"],
+      ["Plural" ,"Person3" ,"bá?seqek-aahq(e)"]
+    ]
+  },
+  {
+    "label": "aar-Verb-ba?-PerfectPast2Affirmative",
+    "note": "HA2.7.2.2p.",
+    "common": {
+      "lexeme": "ba?",
+      "pos": "Verb",
+      "polarity": "Affirmative",
+      "tam": "PerfectPast2"
+    },
+    "terms": [
+      ["number" ,"person" ,"token"],
+      ["Singular" ,"Person1" ,"ba?tít-aahq(e)"],
+      ["Singular" ,"Person2" ," ba?táy-aahq(e)"],
+      ["Singular" ,"Person3" ,"ba?t-aahq(e)"],
+      ["Plural" ,"Person1" ,"ba?to(o)ht-aahq(e)"],
+      ["Plural" ,"Person2" ,"ba?tét-aahq(e)"],
+      ["Plural" ,"Person3" ,"ba?ték-aahq(e)"]
+    ]
+  },
+  {
+    "label": "aar-Verb-ba?-PerfectPastNegative",
+    "note": "HA2.7.2.2p.",
+    "common": {
+      "lexeme": "ba?",
+      "pos": "Verb",
+      "polarity": "Negative",
+      "tam": "PerfectPast"
+    },
+    "terms": [
+      ["number" ,"person" ,"token"],
+      ["Singular" ,"Person1" ,"ba?kít-aahq(e)"],
+      ["Singular" ,"Person2" ," ba?káy-aahq(e)"],
+      ["Singular" ,"Person3" ,"ba?kí-aahq(e)"],
+      ["Plural" ,"Person1" ,"ba?ko(o)ht-aahq(e)"],
+      ["Plural" ,"Person2" ,"ba?két-aahq(e)"],
+      ["Plural" ,"Person3" ,"ba?kék-aahq(e)"]
+    ]
+  }
+]}
