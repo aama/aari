@@ -211,7 +211,7 @@ aar:aar-Pronoun a aamas:Termcluster ;
 	rdfs:comment "HA2.2.1" 
 	.
 
-aama:ID23723156-5de3-412a-b68d-dd5063145884 a aamas:Term ;
+aama:ID07f05bc1-189c-4345-9062-6abc0c72280a a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -222,7 +222,7 @@ aama:ID23723156-5de3-412a-b68d-dd5063145884 a aamas:Term ;
 	aar:token "ʔí" ;
 	.
 
-aama:ID9f87bf04-6151-4bf1-a055-ea17dc8938f3 a aamas:Term ;
+aama:IDb50ca06d-bdb6-4c00-8b9e-c86671979372 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -233,7 +233,7 @@ aama:ID9f87bf04-6151-4bf1-a055-ea17dc8938f3 a aamas:Term ;
 	aar:token "áah" ;
 	.
 
-aama:ID9e07241b-a162-4302-af43-d4ebce5ec068 a aamas:Term ;
+aama:ID827f7102-6562-49b3-963a-bf4543457775 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -244,7 +244,7 @@ aama:ID9e07241b-a162-4302-af43-d4ebce5ec068 a aamas:Term ;
 	aar:token "kí" ;
 	.
 
-aama:ID02f36f1a-d9c9-46f5-81b5-8fd75f511946 a aamas:Term ;
+aama:ID4dfa986d-2cb2-44ae-b3a8-302e8af96a55 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -255,7 +255,7 @@ aama:ID02f36f1a-d9c9-46f5-81b5-8fd75f511946 a aamas:Term ;
 	aar:token "kó" ;
 	.
 
-aama:ID70a6da7c-9716-4d85-9cb6-32df762f4b0b a aamas:Term ;
+aama:ID5cdc0a6c-7180-4669-a098-873dc7a07fa5 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -266,7 +266,7 @@ aama:ID70a6da7c-9716-4d85-9cb6-32df762f4b0b a aamas:Term ;
 	aar:token "wó(o)h" ;
 	.
 
-aama:ID35cf8b4f-1484-4cf8-b11f-8043ddf8a5cd a aamas:Term ;
+aama:IDcbd124b9-ee9e-47de-8627-16c239f59290 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -277,7 +277,7 @@ aama:ID35cf8b4f-1484-4cf8-b11f-8043ddf8a5cd a aamas:Term ;
 	aar:token "yé" ;
 	.
 
-aama:ID650dc592-3a39-487a-a5fe-da9620c00abf a aamas:Term ;
+aama:ID32a3c467-d3f0-49a2-a48d-20ff1a65ce84 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -296,7 +296,7 @@ aar:aar-Pronoun a aamas:Termcluster ;
 	rdfs:comment "HA2.2.1" 
 	.
 
-aama:ID42fa5e73-f127-4058-a98d-09dcd5f76668 a aamas:Term ;
+aama:IDc04a683b-d1e9-4c71-a81d-611f562fb451 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -307,7 +307,7 @@ aama:ID42fa5e73-f127-4058-a98d-09dcd5f76668 a aamas:Term ;
 	aar:token "ʔím" ;
 	.
 
-aama:ID5d630811-c438-46ff-a6a2-8ce4a4ce110d a aamas:Term ;
+aama:IDa84c4842-dcce-4790-b2f2-57941cfb5cd2 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -318,7 +318,7 @@ aama:ID5d630811-c438-46ff-a6a2-8ce4a4ce110d a aamas:Term ;
 	aar:token "áahm" ;
 	.
 
-aama:IDec327524-9ca6-4c85-b339-257685ffce36 a aamas:Term ;
+aama:IDefbe92b4-3d2c-45ab-8da0-f596a67a929b a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -329,7 +329,7 @@ aama:IDec327524-9ca6-4c85-b339-257685ffce36 a aamas:Term ;
 	aar:token "kím" ;
 	.
 
-aama:IDcaa586c2-8a0d-4963-bd41-1b2b737a5450 a aamas:Term ;
+aama:ID1708c154-7956-4654-9777-91b3cfd9e443 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -340,7 +340,7 @@ aama:IDcaa586c2-8a0d-4963-bd41-1b2b737a5450 a aamas:Term ;
 	aar:token "kó(o)hm" ;
 	.
 
-aama:ID476c5643-0d9a-42fc-aec0-9cfecf240a47 a aamas:Term ;
+aama:IDe6882c18-d24d-4f94-831f-15a613217336 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -351,7 +351,7 @@ aama:ID476c5643-0d9a-42fc-aec0-9cfecf240a47 a aamas:Term ;
 	aar:token "wó(o)hm" ;
 	.
 
-aama:ID4a7045ea-cb70-4297-99c1-3e7c69f31063 a aamas:Term ;
+aama:IDab546cb1-ebc3-4649-96f2-9d962c3b25ed a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -362,7 +362,7 @@ aama:ID4a7045ea-cb70-4297-99c1-3e7c69f31063 a aamas:Term ;
 	aar:token "yé(e)hm" ;
 	.
 
-aama:ID1923a30d-3bef-4f3b-b013-ac1b06945443 a aamas:Term ;
+aama:ID02ce89dc-bf37-4ef3-9ba4-17a4ba780eec a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -381,7 +381,7 @@ aar:aar-Pronoun a aamas:Termcluster ;
 	rdfs:comment "HA2.2.1" 
 	.
 
-aama:ID16e37998-5cd7-415a-8956-afafcd43e6d9 a aamas:Term ;
+aama:ID400dd892-6159-424f-a8cc-6bad9d9ece7c a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -392,7 +392,7 @@ aama:ID16e37998-5cd7-415a-8956-afafcd43e6d9 a aamas:Term ;
 	aar:token "ʔitá" ;
 	.
 
-aama:ID1f98edad-5393-4a41-9b81-d3a1ed660eac a aamas:Term ;
+aama:IDbc7ce640-66fa-446e-a681-fc1424ba89a7 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -403,7 +403,7 @@ aama:ID1f98edad-5393-4a41-9b81-d3a1ed660eac a aamas:Term ;
 	aar:token "áahná" ;
 	.
 
-aama:ID6c2465d3-c2a8-4cee-a887-3e524eeb693c a aamas:Term ;
+aama:ID1cbcd500-a8c1-421a-b65d-a3fba20142c5 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -414,7 +414,7 @@ aama:ID6c2465d3-c2a8-4cee-a887-3e524eeb693c a aamas:Term ;
 	aar:token "nó(o)h" ;
 	.
 
-aama:ID6cbee680-0bbf-480f-8c21-2248d1cf274a a aamas:Term ;
+aama:ID9ccc4a4b-01bb-4ff3-affe-d68657a6327d a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -425,7 +425,7 @@ aama:ID6cbee680-0bbf-480f-8c21-2248d1cf274a a aamas:Term ;
 	aar:token "náah" ;
 	.
 
-aama:ID9e87c56a-af32-40a6-ade5-ee6ec208fad6 a aamas:Term ;
+aama:IDfb87bb35-25e7-4487-844c-5a5b6e775c71 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -436,7 +436,7 @@ aama:ID9e87c56a-af32-40a6-ade5-ee6ec208fad6 a aamas:Term ;
 	aar:token "wo(o)htá" ;
 	.
 
-aama:IDbabcf6e7-e06c-4f2b-a4a7-f10c8b89c725 a aamas:Term ;
+aama:IDe33d196c-7bce-4e08-877e-6b20fc95b419 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -447,7 +447,7 @@ aama:IDbabcf6e7-e06c-4f2b-a4a7-f10c8b89c725 a aamas:Term ;
 	aar:token "yetá" ;
 	.
 
-aama:ID7c174b07-709c-4534-af77-592f96df6a76 a aamas:Term ;
+aama:ID59de22bb-5039-4396-94ea-6aa24b9e1ef7 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -466,7 +466,7 @@ aar:aar-Pronoun a aamas:Termcluster ;
 	rdfs:comment "HA2.2.1" 
 	.
 
-aama:ID6e0718ae-1560-4fca-9bca-7d3c6018df49 a aamas:Term ;
+aama:ID0041c03e-4b00-42e8-b57e-aca2d5849c90 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -477,7 +477,7 @@ aama:ID6e0718ae-1560-4fca-9bca-7d3c6018df49 a aamas:Term ;
 	aar:token "ʔímatam" ;
 	.
 
-aama:ID9cf2ad9b-e4d3-41ac-9fb7-3b4635c60125 a aamas:Term ;
+aama:IDc4f50a2e-9c33-4302-bdb9-bb0060b1fcfa a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -488,7 +488,7 @@ aama:ID9cf2ad9b-e4d3-41ac-9fb7-3b4635c60125 a aamas:Term ;
 	aar:token "áahmatam" ;
 	.
 
-aama:ID28048bff-4964-44ec-97ab-d5d1d787199c a aamas:Term ;
+aama:ID8057a713-fd7e-4d8b-ba17-c95ac7120d1b a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -499,7 +499,7 @@ aama:ID28048bff-4964-44ec-97ab-d5d1d787199c a aamas:Term ;
 	aar:token "kímatam ~ yíhmatam" ;
 	.
 
-aama:IDd706d5b4-e658-46c0-88b6-15dc0d5ba7e2 a aamas:Term ;
+aama:ID5ed7532c-b931-4871-90c0-a5d6752f72cc a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -510,7 +510,7 @@ aama:IDd706d5b4-e658-46c0-88b6-15dc0d5ba7e2 a aamas:Term ;
 	aar:token "kómatam ~ yíhmatam" ;
 	.
 
-aama:IDc31353d3-744d-4621-865f-43f7b5271d23 a aamas:Term ;
+aama:ID55b09cae-7b4d-4916-93c3-b0f34623dc91 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -521,7 +521,7 @@ aama:IDc31353d3-744d-4621-865f-43f7b5271d23 a aamas:Term ;
 	aar:token "wó(o)hmatam" ;
 	.
 
-aama:ID5e480a56-4a17-4c31-92af-5b20307687d9 a aamas:Term ;
+aama:IDd7eeeb59-50ec-451e-933b-9c7573893981 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -532,7 +532,7 @@ aama:ID5e480a56-4a17-4c31-92af-5b20307687d9 a aamas:Term ;
 	aar:token "yé(e)hmatam" ;
 	.
 
-aama:IDd252d573-8482-420b-9197-ca7e2004582f a aamas:Term ;
+aama:ID0b312295-3c6b-40f8-82b3-682ac69d51fc a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -551,7 +551,7 @@ aar:aar-Pronoun a aamas:Termcluster ;
 	rdfs:comment "HA2.2.1" 
 	.
 
-aama:IDa4fbbdcf-c91c-410d-a549-63756c7e61f9 a aamas:Term ;
+aama:ID79d08086-d124-4fc1-b937-5336d823c280 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -562,7 +562,7 @@ aama:IDa4fbbdcf-c91c-410d-a549-63756c7e61f9 a aamas:Term ;
 	aar:token "ʔistén" ;
 	.
 
-aama:ID9a7f72f4-722f-4418-a994-316b5c86d886 a aamas:Term ;
+aama:ID5c900135-a015-4df5-88cf-a60d8ea7cc3b a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -573,7 +573,7 @@ aama:ID9a7f72f4-722f-4418-a994-316b5c86d886 a aamas:Term ;
 	aar:token "aahntén" ;
 	.
 
-aama:IDff610c35-6520-44fe-884c-05e4c9d6afc5 a aamas:Term ;
+aama:ID80c4aa6d-fea5-44f3-8f88-92551c2c2f0d a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -584,7 +584,7 @@ aama:IDff610c35-6520-44fe-884c-05e4c9d6afc5 a aamas:Term ;
 	aar:token "kittén" ;
 	.
 
-aama:ID4e47def9-862c-4ca7-82cb-1c487bea63f4 a aamas:Term ;
+aama:ID716a53f6-44ad-41cb-b013-11807c3d5e63 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -595,7 +595,7 @@ aama:ID4e47def9-862c-4ca7-82cb-1c487bea63f4 a aamas:Term ;
 	aar:token "kó(o)httén" ;
 	.
 
-aama:ID9821231c-b458-479b-b259-c8a2f55ac397 a aamas:Term ;
+aama:ID29f0fd55-15c1-4fbf-b841-35576e5bf69f a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -606,7 +606,7 @@ aama:ID9821231c-b458-479b-b259-c8a2f55ac397 a aamas:Term ;
 	aar:token "wo(o)hntén" ;
 	.
 
-aama:IDc44c8fb8-6326-4022-b257-7e750b99a596 a aamas:Term ;
+aama:ID95ee4168-97f0-41b4-a496-46ff52a0561d a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -617,7 +617,7 @@ aama:IDc44c8fb8-6326-4022-b257-7e750b99a596 a aamas:Term ;
 	aar:token "yentén" ;
 	.
 
-aama:ID933e967d-dd84-4619-9dac-d473d3bc2a9c a aamas:Term ;
+aama:ID105479d2-0bc5-4fd1-870a-c19846f2e2f0 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Pronoun ;
 	aar:pos aar:Pronoun ;
@@ -636,7 +636,7 @@ aar:aar-Verb-ba-FutureAffirmative a aamas:Termcluster ;
 	rdfs:comment "HA2.7.2.2p." 
 	.
 
-aama:IDaff33416-da9b-46cf-b678-5dd106676db3 a aamas:Term ;
+aama:ID5349f6ad-d500-4f20-8eed-5345fa732988 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-FutureAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -648,7 +648,7 @@ aama:IDaff33416-da9b-46cf-b678-5dd106676db3 a aamas:Term ;
 	aar:token "báʔter" ;
 	.
 
-aama:ID540697e2-1aed-4d02-bb17-8e0622e8f4c7 a aamas:Term ;
+aama:ID3c08cf64-20a3-4cc8-8cdb-81d745b18cc0 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-FutureAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -660,7 +660,7 @@ aama:ID540697e2-1aed-4d02-bb17-8e0622e8f4c7 a aamas:Term ;
 	aar:token " báʔtay" ;
 	.
 
-aama:ID12824557-d0bd-4533-b268-663973f6647c a aamas:Term ;
+aama:ID38340e49-32bc-42ba-b071-dda8e6e1e3f7 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-FutureAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -672,7 +672,7 @@ aama:ID12824557-d0bd-4533-b268-663973f6647c a aamas:Term ;
 	aar:token "báʔter" ;
 	.
 
-aama:ID9f32bdac-8295-4d68-950d-badbca43823f a aamas:Term ;
+aama:ID11006221-12a8-4ce8-91f0-9435461a797a a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-FutureAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -684,7 +684,7 @@ aama:ID9f32bdac-8295-4d68-950d-badbca43823f a aamas:Term ;
 	aar:token "báʔsto(o)ht" ;
 	.
 
-aama:ID74b971b4-8a59-4d84-8053-88c4b4ac019f a aamas:Term ;
+aama:ID9541d1a7-375d-41f2-853f-0fce356c332e a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-FutureAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -696,7 +696,7 @@ aama:ID74b971b4-8a59-4d84-8053-88c4b4ac019f a aamas:Term ;
 	aar:token "báʔster" ;
 	.
 
-aama:IDf1d12dc4-cc57-43cf-bb2a-1f80e6bdad01 a aamas:Term ;
+aama:IDce81b6d9-5243-4f36-928e-d30d55fa281c a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-FutureAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -716,7 +716,7 @@ aar:aar-Verb-ba-ImperativeAffirmative a aamas:Termcluster ;
 	rdfs:comment "HA2.7.2.2p." 
 	.
 
-aama:IDff990d78-f5d9-42f1-82db-4f3278484014 a aamas:Term ;
+aama:ID83687cba-7ae5-4cf8-a812-42b944521e67 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperativeAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -728,7 +728,7 @@ aama:IDff990d78-f5d9-42f1-82db-4f3278484014 a aamas:Term ;
 	aar:token " báka" ;
 	.
 
-aama:IDad297349-d0de-449d-b824-dbda4b57eed2 a aamas:Term ;
+aama:IDe4a8ba81-473a-46ad-b2a8-7f2162f99979 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperativeAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -748,7 +748,7 @@ aar:aar-Verb-ba-ImperativeNegative a aamas:Termcluster ;
 	rdfs:comment "HA2.7.2.2p." 
 	.
 
-aama:ID206bde81-3686-4ea7-807c-a8dac6c8f73e a aamas:Term ;
+aama:IDde8bc121-5166-4203-a1e8-1044ca070641 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperativeNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -760,7 +760,7 @@ aama:ID206bde81-3686-4ea7-807c-a8dac6c8f73e a aamas:Term ;
 	aar:token " áahy baʔka" ;
 	.
 
-aama:ID75ee91a8-9238-4b08-a2c7-fa5cb54ff23f a aamas:Term ;
+aama:IDb294a505-2f8d-4339-ab90-d5232b8f4b7b a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperativeNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -780,7 +780,7 @@ aar:aar-Verb-ba-ImperfactNegative a aamas:Termcluster ;
 	rdfs:comment "HA2.7.2.2p." 
 	.
 
-aama:IDd884f06e-ab18-451b-8b0a-b18752912ed9 a aamas:Term ;
+aama:IDef845d5d-af11-472d-9a81-ee73b368a712 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfactNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -792,7 +792,7 @@ aama:IDd884f06e-ab18-451b-8b0a-b18752912ed9 a aamas:Term ;
 	aar:token "baʔáyit " ;
 	.
 
-aama:IDa455982f-4100-4ed3-ac45-b96c3ce94dc2 a aamas:Term ;
+aama:ID06b76691-fcb9-497d-bc25-616914cc9ef9 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfactNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -804,7 +804,7 @@ aama:IDa455982f-4100-4ed3-ac45-b96c3ce94dc2 a aamas:Term ;
 	aar:token " baʔáyay" ;
 	.
 
-aama:IDd050820d-425d-4f5b-afd7-adb2712d8d4f a aamas:Term ;
+aama:IDc82b134f-1702-4b48-8c5f-612d3f03dfdf a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfactNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -816,7 +816,7 @@ aama:IDd050820d-425d-4f5b-afd7-adb2712d8d4f a aamas:Term ;
 	aar:token "baʔáy" ;
 	.
 
-aama:ID836b366b-f24a-4133-89fe-29cae13ac2c8 a aamas:Term ;
+aama:ID3feabfe8-445e-47b1-9a42-54f124a7e32f a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfactNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -828,7 +828,7 @@ aama:ID836b366b-f24a-4133-89fe-29cae13ac2c8 a aamas:Term ;
 	aar:token "baʔáyo(o)ht" ;
 	.
 
-aama:IDbdd38b80-5fba-4202-acf7-4e3e8b4781e6 a aamas:Term ;
+aama:ID65b6a7f3-a11f-4533-b2a2-8dfb9d0dd9c6 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfactNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -840,7 +840,7 @@ aama:IDbdd38b80-5fba-4202-acf7-4e3e8b4781e6 a aamas:Term ;
 	aar:token "baʔáyet" ;
 	.
 
-aama:IDc6477633-73a7-4785-a592-e88126f5fc1d a aamas:Term ;
+aama:ID3a352ed2-ca40-4416-ae60-c9d0432d4798 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfactNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -860,7 +860,7 @@ aar:aar-Verb-ba-ImperfectAffirmative a aamas:Termcluster ;
 	rdfs:comment "HA2.7.2.2p." 
 	.
 
-aama:IDcd7a6422-3c6a-4a82-a519-4c42bd06037e a aamas:Term ;
+aama:ID7a950546-dc97-4399-8e84-4d6f552d50f4 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -872,7 +872,7 @@ aama:IDcd7a6422-3c6a-4a82-a519-4c42bd06037e a aamas:Term ;
 	aar:token "báʔbaʔdit  ~  bábaʔdit" ;
 	.
 
-aama:IDd2648300-65bd-411c-aacf-94a54e3cffac a aamas:Term ;
+aama:IDbe4a812f-1a84-4420-b32d-df5fc884b8fb a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -884,7 +884,7 @@ aama:IDd2648300-65bd-411c-aacf-94a54e3cffac a aamas:Term ;
 	aar:token " báʔbaʔday  ~  bábaʔday" ;
 	.
 
-aama:ID4018a89c-a691-4607-bea1-e24c205efb67 a aamas:Term ;
+aama:ID3cc8a891-6716-4bd8-b953-6e241eeb70e3 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -896,7 +896,7 @@ aama:ID4018a89c-a691-4607-bea1-e24c205efb67 a aamas:Term ;
 	aar:token "báʔbaʔda  ~  bábaʔda" ;
 	.
 
-aama:ID3af94c67-09c9-4c32-a841-de1b7b27b238 a aamas:Term ;
+aama:IDca448fd6-7f33-4070-808d-6da46660661e a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -908,7 +908,7 @@ aama:ID3af94c67-09c9-4c32-a841-de1b7b27b238 a aamas:Term ;
 	aar:token "báʔbaʔdo(o)ht  ~  bábaʔdo(o)ht" ;
 	.
 
-aama:IDb04e7f71-b744-4b66-9a50-7f6c847ec348 a aamas:Term ;
+aama:IDfc96f8e7-0dc7-4eb7-a9e2-1ad6d9052c7e a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -920,7 +920,7 @@ aama:IDb04e7f71-b744-4b66-9a50-7f6c847ec348 a aamas:Term ;
 	aar:token "báʔbaʔdet  ~  bábaʔdet" ;
 	.
 
-aama:ID28a26a34-3a4a-4d21-9fb5-2cd512cb0f0f a aamas:Term ;
+aama:IDd05e6f96-21e6-4efe-9963-7079b4841fef a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -940,7 +940,7 @@ aar:aar-Verb-ba-ImperfectPastAffirmative a aamas:Termcluster ;
 	rdfs:comment "HA2.7.2.2p." 
 	.
 
-aama:ID1296e992-873d-463e-9bdb-4f2c81034ba2 a aamas:Term ;
+aama:ID6abd58b6-493b-4a34-9a48-2127361aca1f a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectPastAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -952,7 +952,7 @@ aama:ID1296e992-873d-463e-9bdb-4f2c81034ba2 a aamas:Term ;
 	aar:token "bábaʔdit-aahq(e)  ~  bábaʔd- aahqit(e)" ;
 	.
 
-aama:IDf33ead5b-6e90-4206-b51c-01dc097e409d a aamas:Term ;
+aama:IDbfdc4312-fbec-4b0b-8eac-2600a6f7e012 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectPastAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -964,7 +964,7 @@ aama:IDf33ead5b-6e90-4206-b51c-01dc097e409d a aamas:Term ;
 	aar:token " bábaʔday-aahq(e)  ~  bábaʔd- aahqay" ;
 	.
 
-aama:IDa2ef88ae-3672-4c48-80dc-51492c89766b a aamas:Term ;
+aama:IDcf2caf28-2013-4973-97fd-6a0273b3ab15 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectPastAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -976,7 +976,7 @@ aama:IDa2ef88ae-3672-4c48-80dc-51492c89766b a aamas:Term ;
 	aar:token "bábaʔd-aahq(e)" ;
 	.
 
-aama:IDea9ea036-7a60-441d-8e56-0ea440230f38 a aamas:Term ;
+aama:ID05572f85-c2a5-483c-a80c-c086085ead6a a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectPastAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -988,7 +988,7 @@ aama:IDea9ea036-7a60-441d-8e56-0ea440230f38 a aamas:Term ;
 	aar:token "bábaʔdo(o)ht-aahq(e)  ~  bábaʔd- aahq o(o)ht(e) " ;
 	.
 
-aama:ID10945d64-d2a7-40d9-851a-d1dbb4ae7b78 a aamas:Term ;
+aama:IDefc38fda-4824-4785-95a7-0662b8d5a4d6 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectPastAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1000,7 +1000,7 @@ aama:ID10945d64-d2a7-40d9-851a-d1dbb4ae7b78 a aamas:Term ;
 	aar:token "bábaʔdet-aahq(e)  ~  bábaʔd- aahqet(e) " ;
 	.
 
-aama:ID5b1c198e-7cf3-444d-bc4e-ed4c3e2b1f6b a aamas:Term ;
+aama:ID8f9aceef-9cf2-46e1-ba22-fe3819b8463c a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectPastAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1020,7 +1020,7 @@ aar:aar-Verb-ba-ImperfectPastNegative a aamas:Termcluster ;
 	rdfs:comment "HA2.7.2.2p." 
 	.
 
-aama:ID2cd3094d-9482-4182-b60a-514b74c85a8a a aamas:Term ;
+aama:ID369cce0b-6a3d-45db-8e32-49949705f1e0 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectPastNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1032,7 +1032,7 @@ aama:ID2cd3094d-9482-4182-b60a-514b74c85a8a a aamas:Term ;
 	aar:token "baʔáyit-aahq(e)" ;
 	.
 
-aama:ID79968a38-1c15-4ebf-8b2d-6b68ebb82a92 a aamas:Term ;
+aama:ID22050657-1ea4-4bc9-a566-596c77e9f78d a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectPastNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1044,7 +1044,7 @@ aama:ID79968a38-1c15-4ebf-8b2d-6b68ebb82a92 a aamas:Term ;
 	aar:token " baʔáyay-aahq(e)" ;
 	.
 
-aama:ID855ad2cc-cf39-4525-b546-d81b7982df88 a aamas:Term ;
+aama:ID7f2052ec-ea12-48cd-8f64-61bbdca9c8f0 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectPastNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1056,7 +1056,7 @@ aama:ID855ad2cc-cf39-4525-b546-d81b7982df88 a aamas:Term ;
 	aar:token "baʔáy-aahq(e)" ;
 	.
 
-aama:ID4826056b-2c37-41ba-9fbf-0c7dc9bf7ea2 a aamas:Term ;
+aama:ID5539897c-9de7-43db-b902-ce998d01b27d a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectPastNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1068,7 +1068,7 @@ aama:ID4826056b-2c37-41ba-9fbf-0c7dc9bf7ea2 a aamas:Term ;
 	aar:token "baʔáyo(o)ht-aahq(e)" ;
 	.
 
-aama:IDc4158a4b-31ee-457d-ab4d-55c87742987e a aamas:Term ;
+aama:ID6988c338-24f9-43ff-bb36-0cc44834fbd3 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectPastNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1080,7 +1080,7 @@ aama:IDc4158a4b-31ee-457d-ab4d-55c87742987e a aamas:Term ;
 	aar:token "baʔáyet-aahq(e)" ;
 	.
 
-aama:ID1ed8c558-ec19-4509-8406-649707c02763 a aamas:Term ;
+aama:ID1f43cb8a-4157-4d2a-88be-803ddb5ce1b2 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-ImperfectPastNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1100,7 +1100,7 @@ aar:aar-Verb-ba-JussiveAffirmative a aamas:Termcluster ;
 	rdfs:comment "HA2.7.2.2p." 
 	.
 
-aama:ID9826a86b-18c9-46b9-abea-6666a71ba227 a aamas:Term ;
+aama:ID721903cb-d550-4c1b-b3a1-e4dfa252e0db a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-JussiveAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1112,7 +1112,7 @@ aama:ID9826a86b-18c9-46b9-abea-6666a71ba227 a aamas:Term ;
 	aar:token "baʔ ʔí baʔen  ~ ʔI báʔen" ;
 	.
 
-aama:ID75b4ff84-f0cf-4890-9a33-809e3266a47c a aamas:Term ;
+aama:ID18d4ef99-293c-4164-8aa5-de929a48a335 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-JussiveAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1124,7 +1124,7 @@ aama:ID75b4ff84-f0cf-4890-9a33-809e3266a47c a aamas:Term ;
 	aar:token "baʔ kí baʔen  ~ ki báʔen" ;
 	.
 
-aama:ID2536adee-542c-4485-bad3-823934131dda a aamas:Term ;
+aama:ID8d9b8eec-d415-4333-97a0-a6f1d681d2f7 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-JussiveAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1136,7 +1136,7 @@ aama:ID2536adee-542c-4485-bad3-823934131dda a aamas:Term ;
 	aar:token "baʔ wó(o)h baʔen  ~ wo(o)h báʔen" ;
 	.
 
-aama:ID30d2c776-a10d-474f-90ce-63fb080182dd a aamas:Term ;
+aama:IDa23de177-76ad-4797-826b-3e11284f9f7e a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-JussiveAffirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1156,7 +1156,7 @@ aar:aar-Verb-ba-JussiveNegative a aamas:Termcluster ;
 	rdfs:comment "HA2.7.2.2p." 
 	.
 
-aama:ID708aec47-2d53-4ed5-aff0-2981710a9336 a aamas:Term ;
+aama:ID002f2024-cd98-4d3b-a367-1c37df7ef3ea a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-JussiveNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1168,7 +1168,7 @@ aama:ID708aec47-2d53-4ed5-aff0-2981710a9336 a aamas:Term ;
 	aar:token "áahy ʔí báʔbaaka" ;
 	.
 
-aama:ID1f065e72-f693-4b85-b501-b08c7cfe662f a aamas:Term ;
+aama:ID33d933ce-363a-4d5e-a765-9496be66f8df a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-JussiveNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1180,7 +1180,7 @@ aama:ID1f065e72-f693-4b85-b501-b08c7cfe662f a aamas:Term ;
 	aar:token "áahy  baʔen" ;
 	.
 
-aama:ID99154ebf-282e-46c8-a190-7e2c9b84d9ce a aamas:Term ;
+aama:IDfdeadc8c-13e1-40e9-a5e0-0ccbdd83e5a3 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-JussiveNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1192,7 +1192,7 @@ aama:ID99154ebf-282e-46c8-a190-7e2c9b84d9ce a aamas:Term ;
 	aar:token "áahy wó(o)h báʔbaaka" ;
 	.
 
-aama:ID0fb1d8ee-4248-4b3e-a558-423cb5098e9c a aamas:Term ;
+aama:IDfdd30abc-71e0-4f0f-9b3c-36bcf8beb0b6 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-JussiveNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1212,7 +1212,7 @@ aar:aar-Verb-ba-Perfect1Affirmative a aamas:Termcluster ;
 	rdfs:comment "HA2.7.2.2p." 
 	.
 
-aama:ID88a54d31-afbd-47e0-b5be-afb8914fbeee a aamas:Term ;
+aama:ID99acb480-6f55-4f03-abb0-7cad57e1e450 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-Perfect1Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1224,7 +1224,7 @@ aama:ID88a54d31-afbd-47e0-b5be-afb8914fbeee a aamas:Term ;
 	aar:token "báʔseqit(e)  ~  básit(e)" ;
 	.
 
-aama:ID136e9164-f57d-4142-8a7d-bb3a0dc4ca86 a aamas:Term ;
+aama:ID492b493f-dde0-42fb-be21-6590fa136ff9 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-Perfect1Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1236,7 +1236,7 @@ aama:ID136e9164-f57d-4142-8a7d-bb3a0dc4ca86 a aamas:Term ;
 	aar:token "báʔseqay  ~  básay" ;
 	.
 
-aama:IDe794cebf-5f71-4097-b2b2-2eee139b994b a aamas:Term ;
+aama:IDd981a762-bc81-473d-9277-39059837f56b a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-Perfect1Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1248,7 +1248,7 @@ aama:IDe794cebf-5f71-4097-b2b2-2eee139b994b a aamas:Term ;
 	aar:token "báʔseqe  ~  báse" ;
 	.
 
-aama:ID82bc0b89-f44a-468c-9f04-d2c96fb6ce38 a aamas:Term ;
+aama:ID35e32735-d657-41f6-91c3-7bbb7ddc1bcc a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-Perfect1Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1260,7 +1260,7 @@ aama:ID82bc0b89-f44a-468c-9f04-d2c96fb6ce38 a aamas:Term ;
 	aar:token "báʔseqo(o)ht(e)  ~  báso(o)ht(e)" ;
 	.
 
-aama:IDcb174643-38f6-4eb1-a816-a9e8cd74f98d a aamas:Term ;
+aama:IDd2fc9149-bca2-4dbd-8fde-dc8ac327a66b a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-Perfect1Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1272,7 +1272,7 @@ aama:IDcb174643-38f6-4eb1-a816-a9e8cd74f98d a aamas:Term ;
 	aar:token "báʔseqat(e)  ~  báset(e)" ;
 	.
 
-aama:ID972cfb6e-3669-42e6-9800-654d7c9d782c a aamas:Term ;
+aama:ID718dbc2a-9d33-45f8-836a-93fe5db59fa8 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-Perfect1Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1292,7 +1292,7 @@ aar:aar-Verb-ba-Perfect2Affirmative a aamas:Termcluster ;
 	rdfs:comment "HA2.7.2.2p." 
 	.
 
-aama:IDf76a611a-005f-4b05-b220-e5df44ebeb75 a aamas:Term ;
+aama:IDcc0aed5b-abba-44c5-b445-4bb21b432142 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-Perfect2Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1304,7 +1304,7 @@ aama:IDf76a611a-005f-4b05-b220-e5df44ebeb75 a aamas:Term ;
 	aar:token "báʔtit" ;
 	.
 
-aama:IDa3fdc863-65ed-488d-8b7b-3f0360e85add a aamas:Term ;
+aama:ID79ee70fb-4e65-4f7a-a44e-526df7260992 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-Perfect2Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1316,7 +1316,7 @@ aama:IDa3fdc863-65ed-488d-8b7b-3f0360e85add a aamas:Term ;
 	aar:token " báʔtay" ;
 	.
 
-aama:ID997bacd5-6105-43c2-ab98-23932682f790 a aamas:Term ;
+aama:ID77a47702-bf44-4978-970b-e19c614b6dab a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-Perfect2Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1328,7 +1328,7 @@ aama:ID997bacd5-6105-43c2-ab98-23932682f790 a aamas:Term ;
 	aar:token "báʔta" ;
 	.
 
-aama:IDb52d96c7-aa5b-4d78-8f2c-1a2063028fe0 a aamas:Term ;
+aama:ID9a14b002-aaa8-46b0-807e-fc16e9ed8991 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-Perfect2Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1340,7 +1340,7 @@ aama:IDb52d96c7-aa5b-4d78-8f2c-1a2063028fe0 a aamas:Term ;
 	aar:token "báʔto(o)ht(e)" ;
 	.
 
-aama:ID121e8556-7fa9-4878-ab8c-c9ee1bffdfad a aamas:Term ;
+aama:ID7744eb56-3c90-46b3-9860-4dbc6e6379e2 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-Perfect2Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1352,7 +1352,7 @@ aama:ID121e8556-7fa9-4878-ab8c-c9ee1bffdfad a aamas:Term ;
 	aar:token "báʔtet" ;
 	.
 
-aama:ID4f9e055a-d43e-420d-8f59-29ede6b62632 a aamas:Term ;
+aama:ID077e1e06-540a-438e-b22f-a35a9210dec8 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-Perfect2Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1372,7 +1372,7 @@ aar:aar-Verb-ba-PerfectNegative a aamas:Termcluster ;
 	rdfs:comment "HA2.7.2.2p." 
 	.
 
-aama:IDa9311e2b-c81f-4d67-aea5-f91006032d1c a aamas:Term ;
+aama:ID14938353-55b9-4cce-9ecd-e67dd1b8a36a a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1384,7 +1384,7 @@ aama:IDa9311e2b-c81f-4d67-aea5-f91006032d1c a aamas:Term ;
 	aar:token "baʔkït(e)" ;
 	.
 
-aama:ID20c23fcf-7e81-43f2-8869-609440664bc3 a aamas:Term ;
+aama:IDfffc4f8e-a62d-4ee3-b568-e3d809b53f8a a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1396,7 +1396,7 @@ aama:ID20c23fcf-7e81-43f2-8869-609440664bc3 a aamas:Term ;
 	aar:token " baʔkáy" ;
 	.
 
-aama:ID5ac7aaed-0f39-4754-8a38-e335d5ddeca2 a aamas:Term ;
+aama:IDe587f3fd-792c-4713-914d-16356c8e99d8 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1408,7 +1408,7 @@ aama:ID5ac7aaed-0f39-4754-8a38-e335d5ddeca2 a aamas:Term ;
 	aar:token "baʔkï" ;
 	.
 
-aama:IDf9668ad1-38b9-46de-8d27-6bc6732d1224 a aamas:Term ;
+aama:IDaeb0c85f-76c8-4503-a85e-c1c3d1a1ab43 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1420,7 +1420,7 @@ aama:IDf9668ad1-38b9-46de-8d27-6bc6732d1224 a aamas:Term ;
 	aar:token "baʔko(o)ht(e)" ;
 	.
 
-aama:ID3d650c0b-55f9-46c0-bfaa-5b2d1d87f42e a aamas:Term ;
+aama:ID7773651a-a30c-4d9f-aba2-a658301e896b a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1432,7 +1432,7 @@ aama:ID3d650c0b-55f9-46c0-bfaa-5b2d1d87f42e a aamas:Term ;
 	aar:token "baʔklêt(e)" ;
 	.
 
-aama:ID4a49d376-2ec7-44d6-b8ed-0cbf36d2f5b6 a aamas:Term ;
+aama:IDd9ed8b32-600b-42d1-bacb-34eee93d7e02 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1452,7 +1452,7 @@ aar:aar-Verb-ba-PerfectPast1Affirmative a aamas:Termcluster ;
 	rdfs:comment "HA2.7.2.2p." 
 	.
 
-aama:ID4850a0dc-0707-451a-b86c-ef8788a6a9cb a aamas:Term ;
+aama:ID4a40605e-e2dd-4e7a-9881-86a88e052a87 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPast1Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1464,7 +1464,7 @@ aama:ID4850a0dc-0707-451a-b86c-ef8788a6a9cb a aamas:Term ;
 	aar:token "báʔseqit-aahq(e)" ;
 	.
 
-aama:ID6b1138b6-3413-43e4-9c92-9f5668687adc a aamas:Term ;
+aama:IDab1cb238-0f5f-444f-80ff-897f83840ac3 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPast1Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1476,7 +1476,7 @@ aama:ID6b1138b6-3413-43e4-9c92-9f5668687adc a aamas:Term ;
 	aar:token " báʔseqay-aahq(e)" ;
 	.
 
-aama:ID2bb2f344-afa1-4266-9e4a-c0c3fe1462ba a aamas:Term ;
+aama:ID2f7b024e-0a2c-4b66-aabb-2253bb6a9aaa a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPast1Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1488,7 +1488,7 @@ aama:ID2bb2f344-afa1-4266-9e4a-c0c3fe1462ba a aamas:Term ;
 	aar:token "báʔseqey-aahq(e) ~ báʔsey -aahq(e)" ;
 	.
 
-aama:ID0e925083-4b55-4f6e-b135-9063063df817 a aamas:Term ;
+aama:IDb0c3907a-37bf-40c3-901b-4c758b668268 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPast1Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1500,7 +1500,7 @@ aama:ID0e925083-4b55-4f6e-b135-9063063df817 a aamas:Term ;
 	aar:token "báʔseqo(o)ht-aahq(e)" ;
 	.
 
-aama:IDd0df8ff6-29d4-4f1a-a04f-482885e5aa2d a aamas:Term ;
+aama:ID52fbea83-fead-4ee8-9419-db157ec8b079 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPast1Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1512,7 +1512,7 @@ aama:IDd0df8ff6-29d4-4f1a-a04f-482885e5aa2d a aamas:Term ;
 	aar:token "báʔseqet-aahq(e)" ;
 	.
 
-aama:IDc99fe4d7-fc46-48bd-b085-abcaff91ea21 a aamas:Term ;
+aama:ID222b76d8-2225-483d-ae07-40d465bbb824 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPast1Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1532,7 +1532,7 @@ aar:aar-Verb-ba-PerfectPast2Affirmative a aamas:Termcluster ;
 	rdfs:comment "HA2.7.2.2p." 
 	.
 
-aama:ID031bd035-4b29-4b17-891d-197f646b37f1 a aamas:Term ;
+aama:ID374ae017-e8ff-438a-a997-402a6a5b8c38 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPast2Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1544,7 +1544,7 @@ aama:ID031bd035-4b29-4b17-891d-197f646b37f1 a aamas:Term ;
 	aar:token "baʔtít-aahq(e)" ;
 	.
 
-aama:ID0d54d872-edcb-4a81-a66b-4e2ee717e7e8 a aamas:Term ;
+aama:IDaa83b611-b588-40d0-ada7-4815195c7210 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPast2Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1556,7 +1556,7 @@ aama:ID0d54d872-edcb-4a81-a66b-4e2ee717e7e8 a aamas:Term ;
 	aar:token " baʔtáy-aahq(e)" ;
 	.
 
-aama:ID08a63ac8-59ef-46ff-94eb-d9b94e1bb53c a aamas:Term ;
+aama:ID309f24ef-e1a3-47a8-8acd-9c63b317aa20 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPast2Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1568,7 +1568,7 @@ aama:ID08a63ac8-59ef-46ff-94eb-d9b94e1bb53c a aamas:Term ;
 	aar:token "baʔt-aahq(e)" ;
 	.
 
-aama:ID3ce46a7a-35f8-4c59-805b-5528ecb4357d a aamas:Term ;
+aama:IDe3186a9d-cf55-4668-930a-86853ca0c207 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPast2Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1580,7 +1580,7 @@ aama:ID3ce46a7a-35f8-4c59-805b-5528ecb4357d a aamas:Term ;
 	aar:token "baʔto(o)ht-aahq(e)" ;
 	.
 
-aama:ID4225fa9f-d948-498b-8e3e-8612b4510c97 a aamas:Term ;
+aama:ID74e5a9b5-f13e-4773-89c9-4aba5209d8b2 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPast2Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1592,7 +1592,7 @@ aama:ID4225fa9f-d948-498b-8e3e-8612b4510c97 a aamas:Term ;
 	aar:token "baʔtét-aahq(e)" ;
 	.
 
-aama:IDbf1148c2-2d58-4dd8-9d3d-d7ef30a04042 a aamas:Term ;
+aama:IDb63ef418-5b3c-4d8d-8bb3-4b2b8f861e9e a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPast2Affirmative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1612,7 +1612,7 @@ aar:aar-Verb-ba-PerfectPastNegative a aamas:Termcluster ;
 	rdfs:comment "HA2.7.2.2p." 
 	.
 
-aama:IDb251df5f-0955-49dc-bb01-65b3f994f0e7 a aamas:Term ;
+aama:ID5786b3dc-a41e-436e-a165-2a505ca4d3db a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPastNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1624,7 +1624,7 @@ aama:IDb251df5f-0955-49dc-bb01-65b3f994f0e7 a aamas:Term ;
 	aar:token "baʔkít-aahq(e)" ;
 	.
 
-aama:ID7847463b-3668-43a6-8972-3f3744ce1944 a aamas:Term ;
+aama:ID4e653935-f84e-4c12-8ca0-f85104c0c040 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPastNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1636,7 +1636,7 @@ aama:ID7847463b-3668-43a6-8972-3f3744ce1944 a aamas:Term ;
 	aar:token " baʔkáy-aahq(e)" ;
 	.
 
-aama:ID9e84212a-4d1a-463b-b6ac-b8ce538eaa50 a aamas:Term ;
+aama:ID4009fd6a-9bf6-4839-a9ea-24c1a8770006 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPastNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1648,7 +1648,7 @@ aama:ID9e84212a-4d1a-463b-b6ac-b8ce538eaa50 a aamas:Term ;
 	aar:token "baʔkí-aahq(e)" ;
 	.
 
-aama:ID1773f45c-8a48-42e6-8545-4ca98e4842b9 a aamas:Term ;
+aama:ID3f6507d7-29cc-4131-a342-72d18b1800b4 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPastNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1660,7 +1660,7 @@ aama:ID1773f45c-8a48-42e6-8545-4ca98e4842b9 a aamas:Term ;
 	aar:token "baʔko(o)ht-aahq(e)" ;
 	.
 
-aama:ID8a99ffb0-6caf-4e97-8081-a195683243cd a aamas:Term ;
+aama:ID5e9591d1-e746-455c-a3e3-fb3745cc403d a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPastNegative ;
 	aamas:lexeme aar:lex-ba ;
@@ -1672,7 +1672,7 @@ aama:ID8a99ffb0-6caf-4e97-8081-a195683243cd a aamas:Term ;
 	aar:token "baʔkét-aahq(e)" ;
 	.
 
-aama:ID16f2050d-c054-473a-bb4a-af0770f1cba2 a aamas:Term ;
+aama:IDb564f56a-63e1-4f82-b430-85af1686f898 a aamas:Term ;
 	aamas:lang aama:Aari ;
 	aamas:memberOf aar:aar-Verb-ba-PerfectPastNegative ;
 	aamas:lexeme aar:lex-ba ;
